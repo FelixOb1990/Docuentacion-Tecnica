@@ -110,7 +110,7 @@ function renderCatalogo(productos) {
 
     if (prod.panfleto?.url) {
       grupo.appendChild(crearBoton(
-        'Panfleto técnico',
+        'Panfleto',
         'panfleto',
         prod.panfleto.url,
         prod.panfleto.nombre || prod.nombre + ' - Panfleto.pdf'
