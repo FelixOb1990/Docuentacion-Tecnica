@@ -1,0 +1,32 @@
+[
+  {
+    "producto": "Hipoclorito de Sodio",
+    "tipo": "hoja",
+    "nombre": "Hipoclorito de Sodio - HDS.pdf",
+    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/hipoclorito-hds.pdf"
+  },
+  {
+    "producto": "Hipoclorito de Sodio",
+    "tipo": "panfleto",
+    "nombre": "Hipoclorito de Sodio - Panfleto.pdf",
+    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/hipoclorito-panfleto.pdf"
+  },
+  {
+    "producto": "Ácido Clorhídrico",
+    "tipo": "hoja",
+    "nombre": "Acido Clorhidrico - HDS.pdf",
+    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/acido-clorhidrico-hds.pdf"
+  },
+  {
+    "producto": "Soda Cáustica",
+    "tipo": "hoja",
+    "nombre": "Soda Caustica - HDS.pdf",
+    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/soda-caustica-hds.pdf"
+  },
+  {
+    "producto": "Soda Cáustica",
+    "tipo": "panfleto",
+    "nombre": "Soda Caustica - Panfleto.pdf",
+    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/soda-caustica-panfleto.pdf"
+  }
+]

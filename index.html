@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hojas de Seguridad — DAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="Assets/images/logo-dac-white.png" alt="DAC" class="logo">
+        <div class="brand-text">
+          <span class="brand-name">DAC</span>
+          <span class="brand-sub">Biblioteca de Seguridad</span>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span id="doc-count" class="doc-count">—</span>
+        <span class="doc-label">documentos</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="search-bar">
+      <svg class="search-icon" viewBox="0 0 20 20" fill="none">
+        <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="buscar" placeholder="Buscar producto o sustancia...">
+      <kbd class="search-hint">ESC para limpiar</kbd>
+    </div>
+
+    <div id="status-bar" class="status-bar hidden">
+      <span id="result-count"></span>
+      <button id="clear-search" class="clear-btn">Limpiar búsqueda</button>
+    </div>
+
+    <div id="loader" class="loader">
+      <div class="loader-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <p>Cargando catálogo...</p>
+    </div>
+
+    <div id="error-state" class="error-state hidden">
+      <svg viewBox="0 0 24 24" fill="none" class="error-icon">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 7v5M12 16h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>No se pudo cargar el catálogo</h3>
+      <p>Verificá que el archivo <code>catalogo.json</code> existe en la raíz del proyecto.</p>
+      <button onclick="location.reload()" class="retry-btn">Reintentar</button>
+    </div>
+
+    <div id="empty-state" class="empty-state hidden">
+      <svg viewBox="0 0 24 24" fill="none" class="empty-icon">
+        <path d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>Sin resultados</h3>
+      <p>No hay productos que coincidan con "<span id="empty-term"></span>"</p>
+    </div>
+
+    <div class="grid" id="catalogo"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>DAC · Hojas de Seguridad · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
