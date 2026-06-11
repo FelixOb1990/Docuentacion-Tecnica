@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — DAC Documentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green:     #2a7a3b;
+      --green-dk:  #1e5c2c;
+      --green-lt:  #e8f4ea;
+      --green-mid: #c8e6cc;
+      --black:     #111a11;
+      --white:     #ffffff;
+      --bg:        #f4f6f4;
+      --surface:   #ffffff;
+      --border:    #d8e4d8;
+      --text:      #111a11;
+      --text-sub:  #5a7060;
+      --red:       #c0392b;
+      --red-lt:    #fdf0ef;
+      --r: 10px; --r-sm: 6px;
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--black);
+      border-bottom: 3px solid var(--green);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo-badge {
+      background: var(--green);
+      color: var(--white);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 5px 12px;
+      border-radius: var(--r-sm);
+    }
+    .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .brand-name { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--white); }
+    .brand-sub  { font-size: 11px; color: var(--green-mid); text-transform: uppercase; letter-spacing: 0.07em; }
+    .header-right { display: flex; align-items: center; gap: 10px; }
+    .btn-logout {
+      background: none; border: 1px solid #444; color: #aaa;
+      padding: 6px 12px; border-radius: var(--r-sm); cursor: pointer;
+      font-size: 12px; font-family: var(--font-body); transition: all 0.15s;
+    }
+    .btn-logout:hover { border-color: var(--red); color: var(--red); }
+    #user-info { font-size: 12px; color: var(--green-mid); }
+
+    /* ── MAIN ── */
+    main { flex: 1; max-width: 960px; width: 100%; margin: 0 auto; padding: 32px 24px; }
+
+    /* ── LOGIN ── */
+    #login-screen {
+      max-width: 460px; margin: 60px auto;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    #login-screen h2 {
+      font-family: var(--font-display);
+      font-size: 26px; font-weight: 700;
+      margin-bottom: 6px;
+    }
+    #login-screen p { font-size: 13px; color: var(--text-sub); margin-bottom: 28px; line-height: 1.5; }
+    .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .field label { font-size: 13px; font-weight: 500; color: var(--text); }
+    .field input, .field select {
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-sm);
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--text);
+      background: var(--white);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .field input:focus, .field select:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(42,122,59,0.12);
+    }
+    .field .hint { font-size: 11px; color: var(--text-sub); }
+    .field .hint a { color: var(--green); text-decoration: none; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 10px 18px; border-radius: var(--r-sm);
+      font-family: var(--font-body); font-size: 14px; font-weight: 500;
+      cursor: pointer; border: none; transition: all 0.15s;
+    }
+    .btn-primary { background: var(--green); color: var(--white); width: 100%; justify-content: center; }
+    .btn-primary:hover { background: var(--green-dk); }
+    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-danger  { background: var(--red-lt); color: var(--red); border: 1px solid #f5c6c2; }
+    .btn-danger:hover  { background: var(--red); color: var(--white); }
+    .btn-ghost { background: none; border: 1.5px solid var(--border); color: var(--text-sub); }
+    .btn-ghost:hover { border-color: var(--green); color: var(--green); }
+
+    /* ── ADMIN PANEL ── */
+    #admin-panel { display: none; }
+    .panel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+    @media (max-width: 700px) { .panel-grid { grid-template-columns: 1fr; } }
+
+    /* ── CARDS ── */
+    .card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--r); padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .card h3 {
+      font-family: var(--font-display); font-size: 20px; font-weight: 700;
+      margin-bottom: 18px; display: flex; align-items: center; gap: 8px;
+    }
+    .card h3 .pill {
+      font-family: var(--font-body); font-size: 11px; font-weight: 500;
+      background: var(--green-lt); color: var(--green); padding: 2px 8px;
+      border-radius: 20px; letter-spacing: 0.03em;
+    }
+
+    /* ── UPLOAD ZONE ── */
+    .upload-zone {
+      border: 2px dashed var(--border);
+      border-radius: var(--r-sm);
+      padding: 28px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.15s;
+      margin-bottom: 14px;
+      background: var(--bg);
+    }
+    .upload-zone:hover, .upload-zone.drag-over {
+      border-color: var(--green);
+      background: var(--green-lt);
+    }
+    .upload-zone input { display: none; }
+    .upload-zone .icon { font-size: 28px; margin-bottom: 8px; }
+    .upload-zone p { font-size: 13px; color: var(--text-sub); }
+    .upload-zone .file-name {
+      font-size: 13px; font-weight: 500; color: var(--green);
+      margin-top: 6px;
+    }
+
+    /* ── PROGRESS ── */
+    .progress-wrap { margin-top: 12px; display: none; }
+    .progress-bar {
+      height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; background: var(--green);
+      width: 0%; transition: width 0.3s;
+      border-radius: 3px;
+    }
+    .progress-label { font-size: 12px; color: var(--text-sub); margin-top: 6px; }
+
+    /* ── CATALOG LIST ── */
+    .cat-search {
+      width: 100%; padding: 9px 12px;
+      border: 1.5px solid var(--border); border-radius: var(--r-sm);
+      font-family: var(--font-body); font-size: 13px;
+      outline: none; margin-bottom: 14px;
+      transition: border-color 0.15s;
+    }
+    .cat-search:focus { border-color: var(--green); }
+
+    .cat-list { display: flex; flex-direction: column; gap: 6px; max-height: 480px; overflow-y: auto; }
+    .cat-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 12px; border-radius: var(--r-sm);
+      background: var(--bg); border: 1px solid var(--border);
+      gap: 10px;
+    }
+    .cat-item-info { flex: 1; min-width: 0; }
+    .cat-item-name { font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cat-item-type { display: flex; gap: 5px; margin-top: 3px; flex-wrap: wrap; }
+    .tag {
+      font-size: 10px; font-weight: 500; padding: 2px 7px;
+      border-radius: 20px; text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .tag.hoja { background: var(--green-lt); color: var(--green); }
+    .tag.panfleto { background: #111a11; color: #c8e6cc; }
+    .cat-item-actions { display: flex; gap: 6px; flex-shrink: 0; }
+    .btn-del {
+      background: none; border: 1px solid #f5c6c2; color: var(--red);
+      padding: 4px 10px; border-radius: var(--r-sm); font-size: 12px;
+      cursor: pointer; font-family: var(--font-body); transition: all 0.15s;
+    }
+    .btn-del:hover { background: var(--red); color: white; }
+
+    /* ── TOAST ── */
+    #toast {
+      position: fixed; bottom: 24px; right: 24px;
+      padding: 12px 18px; border-radius: var(--r-sm);
+      font-size: 13px; font-weight: 500;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transform: translateY(80px); opacity: 0;
+      transition: all 0.25s; z-index: 100;
+    }
+    #toast.show { transform: translateY(0); opacity: 1; }
+    #toast.success { background: var(--green); color: white; }
+    #toast.error   { background: var(--red); color: white; }
+
+    /* ── STATS BAR ── */
+    .stats {
+      display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;
+    }
+    .stat {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--r); padding: 14px 20px; flex: 1; min-width: 120px;
+    }
+    .stat-val { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--green); line-height: 1; }
+    .stat-lbl { font-size: 11px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
+
+    /* ── EMPTY ── */
+    .empty { text-align: center; padding: 30px; color: var(--text-sub); font-size: 13px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black); border-top: 2px solid var(--green);
+      padding: 14px 24px; text-align: center;
+      font-size: 12px; color: #7a9a80;
+    }
+    footer a { color: var(--green-mid); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo-badge">DAC</div>
+    <div class="brand-text">
+      <span class="brand-name">Distribuidora Agro Comercial</span>
+      <span class="brand-sub">Panel de Administración</span>
+    </div>
+  </div>
+  <div class="header-right">
+    <span id="user-info"></span>
+    <button class="btn-logout" id="btn-logout" style="display:none" onclick="logout()">Cerrar sesión</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- LOGIN -->
+  <div id="login-screen">
+    <h2>Acceso al panel</h2>
+    <p>Ingresá tu token de GitHub para administrar el catálogo de documentos.</p>
+    <div class="field">
+      <label for="token-input">Token de GitHub</label>
+      <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off">
+      <span class="hint">
+        Generá uno en <a href="https://github.com/settings/tokens" target="_blank">GitHub → Settings → Tokens</a>
+        con permisos <strong>repo</strong>.
+      </span>
+    </div>
+    <div id="login-error" style="color:var(--red);font-size:13px;margin-bottom:12px;display:none"></div>
+    <button class="btn btn-primary" id="btn-login" onclick="login()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Ingresar
+    </button>
+  </div>
+
+  <!-- ADMIN PANEL -->
+  <div id="admin-panel">
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-val" id="st-total">—</div>
+        <div class="stat-lbl">Productos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val" id="st-hojas">—</div>
+        <div class="stat-lbl">Hojas de seguridad</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val" id="st-panfletos">—</div>
+        <div class="stat-lbl">Panfletos</div>
+      </div>
+    </div>
+
+    <div class="panel-grid">
+
+      <!-- AGREGAR DOCUMENTO -->
+      <div class="card">
+        <h3>Agregar documento <span class="pill">Nuevo</span></h3>
+
+        <div class="field">
+          <label>Nombre del producto</label>
+          <input type="text" id="f-producto" placeholder="Ej: Karate Zeon">
+        </div>
+
+        <div class="field">
+          <label>Tipo de documento</label>
+          <select id="f-tipo">
+            <option value="hoja">Hoja de Seguridad</option>
+            <option value="panfleto">Panfleto Técnico</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Archivo PDF</label>
+          <div class="upload-zone" id="upload-zone" onclick="document.getElementById('f-file').click()"
+               ondragover="event.preventDefault();this.classList.add('drag-over')"
+               ondragleave="this.classList.remove('drag-over')"
+               ondrop="handleDrop(event)">
+            <input type="file" id="f-file" accept=".pdf" onchange="onFileSelect(event)">
+            <div class="icon">📄</div>
+            <p>Hacé clic o arrastrá el PDF acá</p>
+            <div class="file-name" id="file-name-label"></div>
+          </div>
+        </div>
+
+        <div class="progress-wrap" id="progress-wrap">
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          <div class="progress-label" id="progress-label">Subiendo...</div>
+        </div>
+
+        <button class="btn btn-primary" id="btn-upload" onclick="subirDocumento()" disabled>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Subir y agregar al catálogo
+        </button>
+      </div>
+
+      <!-- CATÁLOGO ACTUAL -->
+      <div class="card">
+        <h3>Catálogo actual</h3>
+        <input type="text" class="cat-search" id="cat-search" placeholder="Filtrar productos..." oninput="filtrarLista()">
+        <div class="cat-list" id="cat-list">
+          <div class="empty">Cargando...</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<div id="toast"></div>
+
+<footer>
+  DAC · Panel de Administración · <a href="index.html">← Volver al catálogo público</a>
+</footer>
+
+<script>
+/* ─── CONFIG ────────────────────────────────────────────── */
+const OWNER   = 'FelixOb1990';
+const REPO    = 'Docuentacion-Tecnica';
+const BRANCH  = 'main';
+const CATALOG = 'catalogo.json';
+const RELEASE_TAG = 'v1.0';   // tag del release donde se suben los PDFs
+
+/* ─── STATE ─────────────────────────────────────────────── */
+let token = '';
+let catalogData = [];
+let selectedFile = null;
+
+/* ─── HELPERS ───────────────────────────────────────────── */
+const $  = id => document.getElementById(id);
+const gh = (path, opts = {}) =>
+  fetch(`https://api.github.com${path}`, {
+    ...opts,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...(opts.headers || {})
+    }
+  });
+
+function toast(msg, type = 'success') {
+  const t = $('toast');
+  t.textContent = msg;
+  t.className = `show ${type}`;
+  setTimeout(() => t.className = '', 3000);
+}
+
+function setProgress(pct, label) {
+  $('progress-fill').style.width = pct + '%';
+  $('progress-label').textContent = label;
+}
+
+/* ─── LOGIN ─────────────────────────────────────────────── */
+async function login() {
+  token = $('token-input').value.trim();
+  if (!token) return;
+
+  const btn = $('btn-login');
+  btn.disabled = true;
+  btn.textContent = 'Verificando...';
+  $('login-error').style.display = 'none';
+
+  try {
+    const res = await gh(`/repos/${OWNER}/${REPO}`);
+    if (!res.ok) throw new Error('Token inválido o sin acceso al repo');
+    const data = await res.json();
+
+    // Save token in sessionStorage (cleared when tab closes)
+    sessionStorage.setItem('gh_token', token);
+
+    $('login-screen').style.display  = 'none';
+    $('admin-panel').style.display   = 'block';
+    $('btn-logout').style.display    = 'inline-flex';
+    $('user-info').textContent       = `📂 ${data.full_name}`;
+
+    await cargarCatalogo();
+  } catch (e) {
+    $('login-error').textContent = e.message;
+    $('login-error').style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Ingresar';
+    token = '';
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem('gh_token');
+  location.reload();
+}
+
+// Auto-login if token saved in session
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = sessionStorage.getItem('gh_token');
+  if (saved) {
+    $('token-input').value = saved;
+    login();
+  }
+
+  $('token-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') login();
+  });
+});
+
+/* ─── CARGAR CATÁLOGO ────────────────────────────────────── */
+async function cargarCatalogo() {
+  try {
+    const res = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}?ref=${BRANCH}`);
+    if (!res.ok) throw new Error('No se encontró catalogo.json');
+    const data = await res.json();
+    catalogData = JSON.parse(atob(data.content.replace(/\n/g, '')));
+    renderStats();
+    renderLista(catalogData);
+  } catch (e) {
+    toast('Error cargando catálogo: ' + e.message, 'error');
+  }
+}
+
+/* ─── ESTADÍSTICAS ───────────────────────────────────────── */
+function renderStats() {
+  const productos = new Set(catalogData.map(i => i.producto.toUpperCase()));
+  const hojas     = catalogData.filter(i => i.tipo === 'hoja').length;
+  const panfletos = catalogData.filter(i => i.tipo === 'panfleto').length;
+  $('st-total').textContent     = productos.size;
+  $('st-hojas').textContent     = hojas;
+  $('st-panfletos').textContent = panfletos;
+}
+
+/* ─── LISTA CATÁLOGO ─────────────────────────────────────── */
+function renderLista(data) {
+  const list = $('cat-list');
+
+  // Agrupar por producto
+  const productos = {};
+  data.forEach(item => {
+    const k = item.producto.toUpperCase();
+    if (!productos[k]) productos[k] = { nombre: item.producto, hojas: [], panfletos: [] };
+    if (item.tipo === 'hoja')     productos[k].hojas.push(item);
+    if (item.tipo === 'panfleto') productos[k].panfletos.push(item);
+  });
+
+  const entries = Object.values(productos).sort((a,b) => a.nombre.localeCompare(b.nombre, 'es'));
+
+  if (entries.length === 0) {
+    list.innerHTML = '<div class="empty">Sin resultados</div>';
+    return;
+  }
+
+  list.innerHTML = entries.map(p => `
+    <div class="cat-item">
+      <div class="cat-item-info">
+        <div class="cat-item-name">${escHtml(p.nombre)}</div>
+        <div class="cat-item-type">
+          ${p.hojas.length    ? '<span class="tag hoja">Hoja</span>'         : ''}
+          ${p.panfletos.length ? '<span class="tag panfleto">Panfleto</span>' : ''}
+        </div>
+      </div>
+      <div class="cat-item-actions">
+        <button class="btn-del" onclick="eliminarProducto('${escHtml(p.nombre)}')">Eliminar</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filtrarLista() {
+  const q = $('cat-search').value.toLowerCase();
+  const filtrado = catalogData.filter(i => i.producto.toLowerCase().includes(q));
+  renderLista(filtrado);
+}
+
+/* ─── ARCHIVO ────────────────────────────────────────────── */
+function onFileSelect(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  selectedFile = file;
+  $('file-name-label').textContent = file.name;
+  $('btn-upload').disabled = false;
+}
+
+function handleDrop(e) {
+  e.preventDefault();
+  $('upload-zone').classList.remove('drag-over');
+  const file = e.dataTransfer.files[0];
+  if (file && file.type === 'application/pdf') {
+    selectedFile = file;
+    $('file-name-label').textContent = file.name;
+    $('btn-upload').disabled = false;
+  }
+}
+
+/* ─── SUBIR DOCUMENTO ────────────────────────────────────── */
+async function subirDocumento() {
+  const producto = $('f-producto').value.trim();
+  const tipo     = $('f-tipo').value;
+
+  if (!producto) { toast('Escribí el nombre del producto', 'error'); return; }
+  if (!selectedFile) { toast('Seleccioná un archivo PDF', 'error'); return; }
+
+  const btn = $('btn-upload');
+  btn.disabled = true;
+  $('progress-wrap').style.display = 'block';
+
+  try {
+    // 1. Leer el archivo como base64
+    setProgress(10, 'Leyendo archivo...');
+    const base64 = await fileToBase64(selectedFile);
+
+    // 2. Obtener el release para subir el asset
+    setProgress(25, 'Buscando release...');
+    const releaseRes = await gh(`/repos/${OWNER}/${REPO}/releases/tags/${RELEASE_TAG}`);
+    if (!releaseRes.ok) throw new Error(`No se encontró el release "${RELEASE_TAG}"`);
+    const release = await releaseRes.json();
+
+    // 3. Subir el PDF como asset del release
+    setProgress(45, 'Subiendo PDF...');
+    const uploadUrl = release.upload_url.replace('{?name,label}', '');
+    const uploadRes = await fetch(`${uploadUrl}?name=${encodeURIComponent(selectedFile.name)}`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/pdf',
+      },
+      body: selectedFile
+    });
+
+    if (!uploadRes.ok) {
+      const err = await uploadRes.json();
+      // Si ya existe el archivo, lo aceptamos y usamos la URL anterior
+      if (!err.errors?.some(e => e.code === 'already_exists')) {
+        throw new Error('Error subiendo PDF: ' + (err.message || uploadRes.status));
+      }
+    }
+
+    setProgress(70, 'Actualizando catálogo...');
+
+    // 4. Obtener el SHA actual de catalogo.json
+    const catRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}?ref=${BRANCH}`);
+    if (!catRes.ok) throw new Error('No se pudo leer catalogo.json');
+    const catFile = await catRes.json();
+
+    // 5. Agregar la nueva entrada
+    const newEntry = {
+      producto: producto,
+      tipo: tipo,
+      nombre: selectedFile.name,
+      url: `https://github.com/${OWNER}/${REPO}/releases/download/${RELEASE_TAG}/${encodeURIComponent(selectedFile.name)}`
+    };
+
+    const updatedData = [...catalogData, newEntry];
+    const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(updatedData, null, 2))));
+
+    // 6. Hacer commit del catalogo.json actualizado
+    const commitRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Agregar ${tipo}: ${producto} (${selectedFile.name})`,
+        content: newContent,
+        sha: catFile.sha,
+        branch: BRANCH
+      })
+    });
+
+    if (!commitRes.ok) throw new Error('Error actualizando catálogo');
+
+    setProgress(100, '¡Listo!');
+    catalogData = updatedData;
+    renderStats();
+    renderLista(catalogData);
+
+    toast(`✓ "${producto}" agregado correctamente`);
+
+    // Reset form
+    setTimeout(() => {
+      $('f-producto').value = '';
+      selectedFile = null;
+      $('f-file').value = '';
+      $('file-name-label').textContent = '';
+      $('btn-upload').disabled = true;
+      $('progress-wrap').style.display = 'none';
+      setProgress(0, '');
+    }, 1500);
+
+  } catch (e) {
+    toast(e.message, 'error');
+    $('progress-wrap').style.display = 'none';
+    btn.disabled = false;
+  }
+}
+
+/* ─── ELIMINAR ───────────────────────────────────────────── */
+async function eliminarProducto(nombre) {
+  if (!confirm(`¿Eliminar todas las entradas de "${nombre}" del catálogo?\n\nNota: el archivo PDF en el release NO se elimina.`)) return;
+
+  try {
+    const catRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}?ref=${BRANCH}`);
+    const catFile = await catRes.json();
+
+    const updatedData = catalogData.filter(i =>
+      i.producto.toUpperCase() !== nombre.toUpperCase()
+    );
+
+    const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(updatedData, null, 2))));
+
+    const commitRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Eliminar producto: ${nombre}`,
+        content: newContent,
+        sha: catFile.sha,
+        branch: BRANCH
+      })
+    });
+
+    if (!commitRes.ok) throw new Error('Error al eliminar');
+
+    catalogData = updatedData;
+    renderStats();
+    renderLista(catalogData);
+    toast(`"${nombre}" eliminado del catálogo`);
+  } catch (e) {
+    toast('Error: ' + e.message, 'error');
+  }
+}
+
+/* ─── UTILS ──────────────────────────────────────────────── */
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload  = () => resolve(reader.result.split(',')[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function escHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>
