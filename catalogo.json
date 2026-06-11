@@ -1,32 +1,1004 @@
 [
   {
-    "producto": "Hipoclorito de Sodio",
+    "producto": "Acrobat MZ",
     "tipo": "hoja",
-    "nombre": "Hipoclorito de Sodio - HDS.pdf",
-    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/hipoclorito-hds.pdf"
+    "nombre": "MSDS.ACROBAT.MZ.69.WP.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ACROBAT.MZ.69.WP.PDF"
   },
   {
-    "producto": "Hipoclorito de Sodio",
+    "producto": "Acrozell",
+    "tipo": "hoja",
+    "nombre": "MSDS.ACROZELL.69.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ACROZELL.69.WP.pdf"
+  },
+  {
+    "producto": "Actara",
+    "tipo": "hoja",
+    "nombre": "MSDS.ACTARA.25.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ACTARA.25.WG.pdf"
+  },
+  {
+    "producto": "Actellic",
+    "tipo": "hoja",
+    "nombre": "MSDS.ACTELLIC.50.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ACTELLIC.50.EC.pdf"
+  },
+  {
+    "producto": "Amistar",
+    "tipo": "hoja",
+    "nombre": "MSDS.AMISTAR.50.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.AMISTAR.50.WG.pdf"
+  },
+  {
+    "producto": "Armeval",
+    "tipo": "hoja",
+    "nombre": "MSDS.ARMEVAL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ARMEVAL.pdf"
+  },
+  {
+    "producto": "Aura",
+    "tipo": "hoja",
+    "nombre": "MSDS.AURA.20.EC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.AURA.20.EC.PDF"
+  },
+  {
+    "producto": "Basagran",
+    "tipo": "hoja",
+    "nombre": "MSDS.BASAGRAN.48.SL.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.BASAGRAN.48.SL.PDF"
+  },
+  {
+    "producto": "Basta",
+    "tipo": "hoja",
+    "nombre": "MSDS.BASTA.15.SL.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.BASTA.15.SL.PDF"
+  },
+  {
+    "producto": "Bellis",
+    "tipo": "hoja",
+    "nombre": "MSDS.BELLIS.38.WG.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.BELLIS.38.WG.PDF"
+  },
+  {
+    "producto": "Bispizell",
+    "tipo": "hoja",
+    "nombre": "MSDS.BISPIZELL.40.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.BISPIZELL.40.WP.pdf"
+  },
+  {
+    "producto": "Blatt",
+    "tipo": "hoja",
+    "nombre": "MSDS.BLATT.24.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.BLATT.24.EC.pdf"
+  },
+  {
+    "producto": "Break-Thru",
+    "tipo": "hoja",
+    "nombre": "MSDS.BREAK.THRU.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.BREAK.THRU.PDF"
+  },
+  {
+    "producto": "Chess",
+    "tipo": "hoja",
+    "nombre": "MSDS.CHESS.50.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.CHESS.50.WG.pdf"
+  },
+  {
+    "producto": "Clipper",
+    "tipo": "hoja",
+    "nombre": "MSDS.CLIPPER.68.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.CLIPPER.68.WG.pdf"
+  },
+  {
+    "producto": "Crusher",
+    "tipo": "hoja",
+    "nombre": "MSDS.CRUSHER.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.CRUSHER.EC.pdf"
+  },
+  {
+    "producto": "Cupritozell",
+    "tipo": "hoja",
+    "nombre": "MSDS.CUPRITOZELL.24.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.CUPRITOZELL.24.SC.pdf"
+  },
+  {
+    "producto": "Curacron",
+    "tipo": "hoja",
+    "nombre": "MSDS.CURACRON.50.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.CURACRON.50.EC.pdf"
+  },
+  {
+    "producto": "Cycosin",
+    "tipo": "hoja",
+    "nombre": "MSDS.CYCOSIN.50.SC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.CYCOSIN.50.SC.PDF"
+  },
+  {
+    "producto": "DAC Acetoclor",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.Acetoclor.90.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Acetoclor.90.EC.pdf"
+  },
+  {
+    "producto": "DAC Ametrina",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.Ametrina.50.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Ametrina.50.SC.pdf"
+  },
+  {
+    "producto": "DAC Clorpirifos",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.Clorpirifos.48.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Clorpirifos.48.EC.pdf"
+  },
+  {
+    "producto": "DAC Diurón",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.Diuron.80.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Diuron.80.SC.pdf"
+  },
+  {
+    "producto": "DAC Iodine",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.IODINE.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.IODINE.pdf"
+  },
+  {
+    "producto": "DAC Malathion",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.MALATHION.60.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.MALATHION.60.EC.pdf"
+  },
+  {
+    "producto": "DAC Oxamil",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.Oxamil.24.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Oxamil.24.SL.pdf"
+  },
+  {
+    "producto": "DAC Terbutrina",
+    "tipo": "hoja",
+    "nombre": "MSDS.DAC.Terbutrina.50.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Terbutrina.50.SC.pdf"
+  },
+  {
+    "producto": "Dash",
+    "tipo": "hoja",
+    "nombre": "MSDS.DASH.34.9.EC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DASH.34.9.EC.PDF"
+  },
+  {
+    "producto": "Derozim",
+    "tipo": "hoja",
+    "nombre": "MSDS.DEROZIM.50.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DEROZIM.50.SC.pdf"
+  },
+  {
+    "producto": "Dual Gold",
+    "tipo": "hoja",
+    "nombre": "MSDS.DUAL.GOLD.96.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DUAL.GOLD.96.EC.pdf"
+  },
+  {
+    "producto": "Eckosil",
+    "tipo": "hoja",
+    "nombre": "MSDS.Eckosil.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.Eckosil.pdf"
+  },
+  {
+    "producto": "Engeo",
+    "tipo": "hoja",
+    "nombre": "MSDS.ENGEO.24.7.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ENGEO.24.7.SC.pdf"
+  },
+  {
+    "producto": "Ethofin",
+    "tipo": "hoja",
+    "nombre": "MSDS.ETHOFIN.10.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ETHOFIN.10.SC.pdf"
+  },
+  {
+    "producto": "Facet",
+    "tipo": "hoja",
+    "nombre": "MSDS.FACET.25.SC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.FACET.25.SC.PDF"
+  },
+  {
+    "producto": "Forum",
+    "tipo": "hoja",
+    "nombre": "MSDS.FORUM.15.DC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.FORUM.15.DC.PDF"
+  },
+  {
+    "producto": "Fusilade",
+    "tipo": "hoja",
+    "nombre": "MSDS.FUSILADE.12.5.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.FUSILADE.12.5.EC.pdf"
+  },
+  {
+    "producto": "Gesaprim",
+    "tipo": "hoja",
+    "nombre": "MSDS.GESAPRIM.90.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.GESAPRIM.90.WG.pdf"
+  },
+  {
+    "producto": "GrapD Lim",
+    "tipo": "hoja",
+    "nombre": "MSDS.GRAPD.LIM.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.GRAPD.LIM.pdf"
+  },
+  {
+    "producto": "Grapsuper Gun",
+    "tipo": "hoja",
+    "nombre": "MSDS.GRAPSUPER.GUN.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.GRAPSUPER.GUN.pdf"
+  },
+  {
+    "producto": "Grapsuper Gun SR",
+    "tipo": "hoja",
+    "nombre": "MSDS.GRAPSUPER.GUN.SR.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.GRAPSUPER.GUN.SR.pdf"
+  },
+  {
+    "producto": "Hexone Fácil",
+    "tipo": "hoja",
+    "nombre": "MSDS.HEXONE.FACIL.70.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.HEXONE.FACIL.70.WG.pdf"
+  },
+  {
+    "producto": "Imidazell",
+    "tipo": "hoja",
+    "nombre": "MSDS.IMIDAZELL.35.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.IMIDAZELL.35.SC.pdf"
+  },
+  {
+    "producto": "Ingrain",
+    "tipo": "hoja",
+    "nombre": "MSDS.INGRAIN.20.SG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.INGRAIN.20.SG.pdf"
+  },
+  {
+    "producto": "Juwel",
+    "tipo": "hoja",
+    "nombre": "MSDS.JUWEL.25.SC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.JUWEL.25.SC.PDF"
+  },
+  {
+    "producto": "Karate Zeon",
+    "tipo": "hoja",
+    "nombre": "MSDS.KARATE.ZEON.2.5.CS.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KARATE.ZEON.2.5.CS.pdf"
+  },
+  {
+    "producto": "Kasumin",
+    "tipo": "hoja",
+    "nombre": "MSDS.KASUMIN.2.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KASUMIN.2.SL.pdf"
+  },
+  {
+    "producto": "Kelpak",
+    "tipo": "hoja",
+    "nombre": "MSDS.KELPAK.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KELPAK.pdf"
+  },
+  {
+    "producto": "Kiplant Allgrip",
+    "tipo": "hoja",
+    "nombre": "MSDS.KIPLANT.ALLGRIP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KIPLANT.ALLGRIP.pdf"
+  },
+  {
+    "producto": "Kiplant Essence",
+    "tipo": "hoja",
+    "nombre": "MSDS.KIPLANT.ESSENCE.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KIPLANT.ESSENCE.pdf"
+  },
+  {
+    "producto": "Kiplant VS-04",
+    "tipo": "hoja",
+    "nombre": "MSDS.KIPLANT.VS-04.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KIPLANT.VS-04.pdf"
+  },
+  {
+    "producto": "Kumulus",
+    "tipo": "hoja",
+    "nombre": "MSDS.KUMULUS.80.WG.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.KUMULUS.80.WG.PDF"
+  },
+  {
+    "producto": "Lactosilo Gold Liofilizado",
+    "tipo": "hoja",
+    "nombre": "MSDS.LACTOSILO.GOLD.LIOFILIZ.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LACTOSILO.GOLD.LIOFILIZ.PDF"
+  },
+  {
+    "producto": "Lambda Cihalotrina",
+    "tipo": "hoja",
+    "nombre": "MSDS.LAMBDA.CIHALOTRINA.2.5.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LAMBDA.CIHALOTRINA.2.5.EC.pdf"
+  },
+  {
+    "producto": "Limpiamaíz",
+    "tipo": "hoja",
+    "nombre": "MSDS.LIMPIAMAIZ.90.WG.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LIMPIAMAIZ.90.WG.PDF"
+  },
+  {
+    "producto": "Limpiapotrero",
+    "tipo": "hoja",
+    "nombre": "MSDS.LIMPIAPOTRERO.30.4.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LIMPIAPOTRERO.30.4.SL.pdf"
+  },
+  {
+    "producto": "Manvert Biolet",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.BIOLET.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.BIOLET.pdf"
+  },
+  {
+    "producto": "Manvert Boro",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.BORO.14.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.BORO.14.pdf"
+  },
+  {
+    "producto": "Manvert Cab Tracker",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.CAB.TRACKER.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CAB.TRACKER.pdf"
+  },
+  {
+    "producto": "Manvert Calcio",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.CALCIO.20.2.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CALCIO.20.2.pdf"
+  },
+  {
+    "producto": "Manvert Duplo AL",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.DUPLO.AL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.DUPLO.AL.pdf"
+  },
+  {
+    "producto": "Manvert Enraizante",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.ENRAIZANTE.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.ENRAIZANTE.pdf"
+  },
+  {
+    "producto": "Manvert Estimulante Plus",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.ESTIMULANTE.PLUS.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.ESTIMULANTE.PLUS.pdf"
+  },
+  {
+    "producto": "Manvert Foliplus",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.FOLIPLUS.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.FOLIPLUS.pdf"
+  },
+  {
+    "producto": "Manvert Fosika",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.FOSIKA.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.FOSIKA.pdf"
+  },
+  {
+    "producto": "Manvert Hierro",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.HIERRO.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.HIERRO.pdf"
+  },
+  {
+    "producto": "Manvert Magnesio",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.MAGNESIO.10.8.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.MAGNESIO.10.8.pdf"
+  },
+  {
+    "producto": "Manvert Miconic",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.MICONIC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.MICONIC.pdf"
+  },
+  {
+    "producto": "Manvert Molibdeno Mix",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.MOLIBDENO.MIX.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.MOLIBDENO.MIX.pdf"
+  },
+  {
+    "producto": "Manvert Movili-Ca",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.MOVILI-Ca.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.MOVILI-Ca.pdf"
+  },
+  {
+    "producto": "Manvert Optim pH",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.OPTIM.pH.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.OPTIM.pH.pdf"
+  },
+  {
+    "producto": "Manvert Phytosoap",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.PHYTOSOAP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.PHYTOSOAP.pdf"
+  },
+  {
+    "producto": "Manvert Potasio",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.POTASIO.39.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.POTASIO.39.pdf"
+  },
+  {
+    "producto": "Manvert Rooting",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.ROOTING.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.ROOTING.pdf"
+  },
+  {
+    "producto": "Manvert Silargon Terra",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.SILARGON.TERRA.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.SILARGON.TERRA.pdf"
+  },
+  {
+    "producto": "Manvert Silikon",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.SILIKON.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.SILIKON.pdf"
+  },
+  {
+    "producto": "Manvert Win-Ca",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.WIN-Ca.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.WIN-Ca.pdf"
+  },
+  {
+    "producto": "Manvert Zinc",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.ZINC.9.6.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.ZINC.9.6.pdf"
+  },
+  {
+    "producto": "Manvert ZnB Tracker",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.ZnB.TRACKER.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.ZnB.TRACKER.pdf"
+  },
+  {
+    "producto": "Master Mix",
+    "tipo": "hoja",
+    "nombre": "MSDS.MASTER.MIX.70.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MASTER.MIX.70.WP.pdf"
+  },
+  {
+    "producto": "Match",
+    "tipo": "hoja",
+    "nombre": "MSDS.MATCH.5.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MATCH.5.EC.pdf"
+  },
+  {
+    "producto": "Mertect",
+    "tipo": "hoja",
+    "nombre": "MSDS.MERTECT.50.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MERTECT.50.SC.pdf"
+  },
+  {
+    "producto": "Metralla",
+    "tipo": "hoja",
+    "nombre": "MSDS.METRALLA.12.5.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.METRALLA.12.5.EC.pdf"
+  },
+  {
+    "producto": "Mycoshell Tabs",
+    "tipo": "hoja",
+    "nombre": "MSDS.MYCOSHELL.TABS.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MYCOSHELL.TABS.pdf"
+  },
+  {
+    "producto": "Nomolt",
+    "tipo": "hoja",
+    "nombre": "MSDS.NOMOLT.15.SC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.NOMOLT.15.SC.PDF"
+  },
+  {
+    "producto": "Oncol GR",
+    "tipo": "hoja",
+    "nombre": "MSDS.ONCOL.10.GR.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ONCOL.10.GR.pdf"
+  },
+  {
+    "producto": "Oncol EC",
+    "tipo": "hoja",
+    "nombre": "MSDS.ONCOL.40.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ONCOL.40.EC.pdf"
+  },
+  {
+    "producto": "Onix",
+    "tipo": "hoja",
+    "nombre": "MSDS.ONIX.25.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ONIX.25.SC.pdf"
+  },
+  {
+    "producto": "Opera",
+    "tipo": "hoja",
+    "nombre": "MSDS.OPERA.18.3.SE.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.OPERA.18.3.SE.PDF"
+  },
+  {
+    "producto": "Opus",
+    "tipo": "hoja",
+    "nombre": "MSDS.OPUS.12.5.SC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.OPUS.12.5.SC.PDF"
+  },
+  {
+    "producto": "Orthene",
+    "tipo": "hoja",
+    "nombre": "MSDS.ORTHENE.97.SG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.ORTHENE.97.SG.pdf"
+  },
+  {
+    "producto": "Paraquat",
+    "tipo": "hoja",
+    "nombre": "MSDS.Paraquat.20.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.Paraquat.20.SL.pdf"
+  },
+  {
+    "producto": "Pegasus",
+    "tipo": "hoja",
+    "nombre": "MSDS.PEGASUS.50.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.PEGASUS.50.SC.pdf"
+  },
+  {
+    "producto": "Picudo",
+    "tipo": "hoja",
+    "nombre": "MSDS.PICUDO.20.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.PICUDO.20.SC.pdf"
+  },
+  {
+    "producto": "Proclaim",
+    "tipo": "hoja",
+    "nombre": "MSDS.PROCLAIM.5.SG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.PROCLAIM.5.SG.pdf"
+  },
+  {
+    "producto": "Proparroz",
+    "tipo": "hoja",
+    "nombre": "MSDS.PROPARROZ.48.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.PROPARROZ.48.EC.pdf"
+  },
+  {
+    "producto": "Prowl",
+    "tipo": "hoja",
+    "nombre": "MSDS.PROWL.45.5.CS.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.PROWL.45.5.CS.PDF"
+  },
+  {
+    "producto": "Pyrazosulfozell",
+    "tipo": "hoja",
+    "nombre": "MSDS.PYRAZOSULFOZELL.10.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.PYRAZOSULFOZELL.10.WP.pdf"
+  },
+  {
+    "producto": "Reglone",
+    "tipo": "hoja",
+    "nombre": "MSDS.REGLONE.20.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.REGLONE.20.SL.pdf"
+  },
+  {
+    "producto": "Regnum",
+    "tipo": "hoja",
+    "nombre": "MSDS.REGNUM.25.EC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.REGNUM.25.EC.PDF"
+  },
+  {
+    "producto": "Revus",
+    "tipo": "hoja",
+    "nombre": "MSDS.REVUS.25.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.REVUS.25.SC.pdf"
+  },
+  {
+    "producto": "Ridomil Gold MZ",
+    "tipo": "hoja",
+    "nombre": "MSDS.RIDOMIL.GOLD.MZ.68.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.RIDOMIL.GOLD.MZ.68.WP.pdf"
+  },
+  {
+    "producto": "Score",
+    "tipo": "hoja",
+    "nombre": "MSDS.SCORE.25.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.SCORE.25.EC.pdf"
+  },
+  {
+    "producto": "Serifel",
+    "tipo": "hoja",
+    "nombre": "MSDS.SERIFEL.10.WP.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.SERIFEL.10.WP.PDF"
+  },
+  {
+    "producto": "Sheriff",
+    "tipo": "hoja",
+    "nombre": "MSDS.SHERIFF.16.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.SHERIFF.16.SL.pdf"
+  },
+  {
+    "producto": "Sonic",
+    "tipo": "hoja",
+    "nombre": "MSDS.SONIC.9.9.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.SONIC.9.9.EC.pdf"
+  },
+  {
+    "producto": "Storm",
+    "tipo": "hoja",
+    "nombre": "MSDS.STORM.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.STORM.PDF"
+  },
+  {
+    "producto": "Sunfire",
+    "tipo": "hoja",
+    "nombre": "MSDS.SUNFIRE.24.SC.PDF",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.SUNFIRE.24.SC.PDF"
+  },
+  {
+    "producto": "Tribel",
+    "tipo": "hoja",
+    "nombre": "MSDS.Tribel.48.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.Tribel.48.EC.pdf"
+  },
+  {
+    "producto": "Tronazell",
+    "tipo": "hoja",
+    "nombre": "MSDS.TRONAZELL.60.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.TRONAZELL.60.WP.pdf"
+  },
+  {
+    "producto": "Uniform",
+    "tipo": "hoja",
+    "nombre": "MSDS.UNIFORM.43.44.SE.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.UNIFORM.43.44.SE.pdf"
+  },
+  {
+    "producto": "Validacin",
+    "tipo": "hoja",
+    "nombre": "MSDS.VALIDACIN.5.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.VALIDACIN.5.SL.pdf"
+  },
+  {
+    "producto": "Vertimec",
+    "tipo": "hoja",
+    "nombre": "MSDS.VERTIMEC.1.8.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.VERTIMEC.1.8.EC.pdf"
+  },
+  {
+    "producto": "Actara",
     "tipo": "panfleto",
-    "nombre": "Hipoclorito de Sodio - Panfleto.pdf",
-    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/hipoclorito-panfleto.pdf"
+    "nombre": "Panfleto.Actara.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Actara.pdf"
   },
   {
-    "producto": "Ácido Clorhídrico",
-    "tipo": "hoja",
-    "nombre": "Acido Clorhidrico - HDS.pdf",
-    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/acido-clorhidrico-hds.pdf"
-  },
-  {
-    "producto": "Soda Cáustica",
-    "tipo": "hoja",
-    "nombre": "Soda Caustica - HDS.pdf",
-    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/soda-caustica-hds.pdf"
-  },
-  {
-    "producto": "Soda Cáustica",
+    "producto": "Agrocom B",
     "tipo": "panfleto",
-    "nombre": "Soda Caustica - Panfleto.pdf",
-    "url": "https://github.com/TU-ORG/TU-REPO/releases/download/v1.0/soda-caustica-panfleto.pdf"
+    "nombre": "Panfleto.Agrocom.B.5.RB.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Agrocom.B.5.RB.pdf"
+  },
+  {
+    "producto": "Amistar",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Amistar.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Amistar.pdf"
+  },
+  {
+    "producto": "Armeval",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Armeval.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Armeval.pdf"
+  },
+  {
+    "producto": "Arsenal",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Arsenal.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Arsenal.pdf"
+  },
+  {
+    "producto": "Aura",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Aura.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Aura.pdf"
+  },
+  {
+    "producto": "Bacstar",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Bacstar.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Bacstar.pdf"
+  },
+  {
+    "producto": "Basagran",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Basagran.48.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Basagran.48.pdf"
+  },
+  {
+    "producto": "Basta",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Basta.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Basta.pdf"
+  },
+  {
+    "producto": "Bellis",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Bellis.38WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Bellis.38WG.pdf"
+  },
+  {
+    "producto": "Blatt",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Blatt.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Blatt.pdf"
+  },
+  {
+    "producto": "Bolero",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Bolero.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Bolero.pdf"
+  },
+  {
+    "producto": "Break-Thru",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Break.Thru.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Break.Thru.pdf"
+  },
+  {
+    "producto": "Chess",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Chess.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Chess.pdf"
+  },
+  {
+    "producto": "Clipper",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Clipper.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Clipper.pdf"
+  },
+  {
+    "producto": "DAC Clorpirifos",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Clorpirifos.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Clorpirifos.pdf"
+  },
+  {
+    "producto": "Crusher",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Crusher.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Crusher.pdf"
+  },
+  {
+    "producto": "Cupritozell",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Cupritozell.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Cupritozell.pdf"
+  },
+  {
+    "producto": "Curacron",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Curacron.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Curacron.pdf"
+  },
+  {
+    "producto": "Cycosin",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Cycosin.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Cycosin.pdf"
+  },
+  {
+    "producto": "DAC 2,4-D",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.2.4D.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.2.4D.pdf"
+  },
+  {
+    "producto": "DAC Acetoclor",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Acetoclor.90.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Acetoclor.90.EC.pdf"
+  },
+  {
+    "producto": "DAC Ametrina",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Ametrina.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Ametrina.pdf"
+  },
+  {
+    "producto": "DAC Glifosato",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Glifosato.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Glifosato.pdf"
+  },
+  {
+    "producto": "DAC Malathion",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Malathion.60.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Malathion.60.EC.pdf"
+  },
+  {
+    "producto": "Paraquat",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Paraquat.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Paraquat.pdf"
+  },
+  {
+    "producto": "DAC PCNB",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.PCNB.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.PCNB.pdf"
+  },
+  {
+    "producto": "DAC Propiconazol",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Propiconazol.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Propiconazol.pdf"
+  },
+  {
+    "producto": "DAC Terbutrina",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.DAC.Terbutrina.50.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Terbutrina.50.SC.pdf"
+  },
+  {
+    "producto": "Dash",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Dash.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Dash.pdf"
+  },
+  {
+    "producto": "DAC Diurón",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Diuron.80.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Diuron.80.SC.pdf"
+  },
+  {
+    "producto": "Dual Gold",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Dual.Gold.96.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Dual.Gold.96.EC.pdf"
+  },
+  {
+    "producto": "Ethofin",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Ethofin.10.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Ethofin.10.SC.pdf"
+  },
+  {
+    "producto": "Facet",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Facet.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Facet.pdf"
+  },
+  {
+    "producto": "Forum",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Forum.15.DC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Forum.15.DC.pdf"
+  },
+  {
+    "producto": "Hexone Fácil",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Hexone.Facil.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Hexone.Facil.pdf"
+  },
+  {
+    "producto": "Karate Zeon",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Karate.Zeon.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Karate.Zeon.pdf"
+  },
+  {
+    "producto": "Lepicron",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Lepicron.75.WP.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Lepicron.75.WP.pdf"
+  },
+  {
+    "producto": "Limpiamaíz",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Limpiamaiz.90.WG.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Limpiamaiz.90.WG.pdf"
+  },
+  {
+    "producto": "Metralla",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Metralla.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Metralla.pdf"
+  },
+  {
+    "producto": "Nomolt",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Nomolt.15.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Nomolt.15.SC.pdf"
+  },
+  {
+    "producto": "Oncol EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Oncol.40.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Oncol.40.EC.pdf"
+  },
+  {
+    "producto": "Onix",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Onix.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Onix.pdf"
+  },
+  {
+    "producto": "Opus",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Opus.12.5.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Opus.12.5.SC.pdf"
+  },
+  {
+    "producto": "Orthene Ultra",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Orthene.Ultra.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Orthene.Ultra.pdf"
+  },
+  {
+    "producto": "Orthocide",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Orthocide.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Orthocide.pdf"
+  },
+  {
+    "producto": "Picudo",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Picudo.20.SC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Picudo.20.SC.pdf"
+  },
+  {
+    "producto": "Proparroz",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Proparroz.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Proparroz.pdf"
+  },
+  {
+    "producto": "Prowl",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Prowl.45.5.CS.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Prowl.45.5.CS.pdf"
+  },
+  {
+    "producto": "Reglone",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Reglone.20.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Reglone.20.SL.pdf"
+  },
+  {
+    "producto": "Regnum",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Regnum.25.EC.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Regnum.25.EC.pdf"
+  },
+  {
+    "producto": "Score",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Score.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Score.pdf"
+  },
+  {
+    "producto": "Sheriff",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Sheriff.16.SL.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Sheriff.16.SL.pdf"
+  },
+  {
+    "producto": "Sonic",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Sonic.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Sonic.pdf"
+  },
+  {
+    "producto": "Storm",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Storm.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Storm.pdf"
   }
 ]
