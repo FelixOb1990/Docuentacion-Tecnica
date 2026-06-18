@@ -1018,5 +1018,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-ZAMPRO.PDF",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-ZAMPRO.PDF"
+  },
+  {
+    "producto": "ZAMPRO 52.5 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Zampro.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Zampro.pdf"
   }
 ]
