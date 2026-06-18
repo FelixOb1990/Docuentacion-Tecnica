@@ -56,13 +56,15 @@ function agrupar(data) {
       productos[key] = {
         nombre: (item.producto || 'SIN NOMBRE').trim(),
         hoja: null,
-        panfleto: null
+        panfleto: null,
+        ficha:null
       };
     }
 
     const tipo = (item.tipo || '').toLowerCase();
     if (tipo.includes('hoja'))     productos[key].hoja     = item;
     if (tipo.includes('panfleto')) productos[key].panfleto = item;
+    if (tipo.includes('ficha'))    productos[key].ficha    = item;
   });
 
   return productos;
@@ -73,7 +75,7 @@ function renderCatalogo(productos) {
   catalogo.innerHTML = '';
   emptyState.classList.add('hidden');
 
-  const entries = Object.values(productos).filter(p => p.hoja || p.panfleto);
+  const entries = Object.values(productos).filter(p => p.hoja || p.panfleto || p.ficha);
 
   if (entries.length === 0) {
     emptyState.classList.remove('hidden');
@@ -114,6 +116,15 @@ function renderCatalogo(productos) {
         'panfleto',
         prod.panfleto.url,
         prod.panfleto.nombre || prod.nombre + ' - Panfleto.pdf'
+      ));
+    }
+
+    if (prod.ficha?.url) {
+      grupo.appendChild(crearBoton(
+        'Ficha de Seguridad',
+        'ficha',
+        prod.ficha.url,
+        prod.ficha.nombre || prod.nombre + ' - FDS.pdf'
       ));
     }
 
