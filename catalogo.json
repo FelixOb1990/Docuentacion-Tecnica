@@ -132,7 +132,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Clorpirifos.48.EC.pdf"
   },
   {
-    "producto": "DAC Diurón 80 SC",
+    "producto": "DAC DiurÃ³n 80 SC",
     "tipo": "hoja",
     "nombre": "MSDS.DAC.Diuron.80.SC.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.DAC.Diuron.80.SC.pdf"
@@ -240,7 +240,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.GRAPSUPER.GUN.SR.pdf"
   },
   {
-    "producto": "Hexone Fácil 70 WG",
+    "producto": "Hexone FÃ¡cil 70 WG",
     "tipo": "hoja",
     "nombre": "MSDS.HEXONE.FACIL.70.WG.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.HEXONE.FACIL.70.WG.pdf"
@@ -318,7 +318,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LAMBDA.CIHALOTRINA.2.5.EC.pdf"
   },
   {
-    "producto": "Limpiamaíz 90 WG",
+    "producto": "LimpiamaÃ­z 90 WG",
     "tipo": "hoja",
     "nombre": "MSDS.LIMPIAMAIZ.90.WG.PDF",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LIMPIAMAIZ.90.WG.PDF"
@@ -852,7 +852,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Dash.pdf"
   },
   {
-    "producto": "DAC Diurón 80 SC",
+    "producto": "DAC DiurÃ³n 80 SC",
     "tipo": "panfleto",
     "nombre": "Panfleto.Diuron.80.SC.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Diuron.80.SC.pdf"
@@ -882,7 +882,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Forum.15.DC.pdf"
   },
   {
-    "producto": "Hexone Fácil 70 WG",
+    "producto": "Hexone FÃ¡cil 70 WG",
     "tipo": "panfleto",
     "nombre": "Panfleto.Hexone.Facil.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Hexone.Facil.pdf"
@@ -900,7 +900,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Lepicron.75.WP.pdf"
   },
   {
-    "producto": "Limpiamaíz 90 WG",
+    "producto": "LimpiamaÃ­z 90 WG",
     "tipo": "panfleto",
     "nombre": "Panfleto.Limpiamaiz.90.WG.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Limpiamaiz.90.WG.pdf"
@@ -1000,5 +1000,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto.Storm.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Storm.pdf"
+  },
+  {
+    "producto": "POLYRAM",
+    "tipo": "panfleto",
+    "nombre": "Panfleto.Facet.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto.Facet.pdf"
   }
 ]
