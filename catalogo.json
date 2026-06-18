@@ -1096,5 +1096,11 @@
     "tipo": "panfleto",
     "nombre": "FT-Manvert-cab-tracker.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-cab-tracker.pdf"
+  },
+  {
+    "producto": "Manvert Biolet",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-biolet.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-biolet.pdf"
   }
 ]
