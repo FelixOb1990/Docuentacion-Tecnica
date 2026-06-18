@@ -1030,5 +1030,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Versys.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Versys.pdf"
+  },
+  {
+    "producto": "VERSYS 10 DC",
+    "tipo": "hoja",
+    "nombre": "MSDS-VERSYS-10-DC.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-VERSYS-10-DC.pdf"
   }
 ]
