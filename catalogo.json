@@ -1024,5 +1024,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Zampro.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Zampro.pdf"
+  },
+  {
+    "producto": "Versys 10 DC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Versys.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Versys.pdf"
   }
 ]
