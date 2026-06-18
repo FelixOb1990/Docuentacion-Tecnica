@@ -1036,5 +1036,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-VERSYS-10-DC.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-VERSYS-10-DC.pdf"
+  },
+  {
+    "producto": "BISPIZELL 40 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Bispizell.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Bispizell.pdf"
   }
 ]
