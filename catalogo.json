@@ -1105,6 +1105,12 @@
   },
   {
     "producto": "Manvert Calcio",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-calcio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
+  },
+  {
+    "producto": "Manvert Calcio",
     "tipo": "hoja",
     "nombre": "MSDS-MANVERT-CALCIO-20.2.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-MANVERT-CALCIO-20.2.pdf"
