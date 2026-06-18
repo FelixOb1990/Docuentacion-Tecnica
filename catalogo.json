@@ -312,7 +312,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LAMBDA.CIHALOTRINA.2.5.EC.pdf"
   },
   {
-    "producto": "LimpiamaiÃÂÃÂÃÂÃÂ­z 90 WG",
+    "producto": "LimpiamaiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­z 90 WG",
     "tipo": "hoja",
     "nombre": "MSDS.LIMPIAMAIZ.90.WG.PDF",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.LIMPIAMAIZ.90.WG.PDF"
@@ -834,12 +834,6 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.DAC.Terbutrina.50.SC.pdf"
   },
   {
-    "producto": "Dash 37.5 EC",
-    "tipo": "panfleto",
-    "nombre": "Panfleto.Dash.pdf",
-    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Dash.pdf"
-  },
-  {
     "producto": "DAC Diuron 80 SC",
     "tipo": "panfleto",
     "nombre": "Panfleto.Diuron.80.SC.pdf",
@@ -888,7 +882,7 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Lepicron.75.WP.pdf"
   },
   {
-    "producto": "LimpiamaiÃÂÃÂÃÂÃÂ­z 90 WG",
+    "producto": "LimpiamaiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­z 90 WG",
     "tipo": "panfleto",
     "nombre": "Panfleto.Limpiamaiz.90.WG.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Limpiamaiz.90.WG.pdf"
@@ -1042,11 +1036,5 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-DAC-Oxamil-24-SL.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-DAC-Oxamil-24-SL.pdf"
-  },
-  {
-    "producto": "DASH 34.9 EC",
-    "tipo": "hoja",
-    "nombre": "MSDS-DASH-34.9-EC.PDF",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-DASH-34.9-EC.PDF"
   }
 ]
