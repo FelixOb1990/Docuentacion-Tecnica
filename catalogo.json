@@ -1042,5 +1042,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-DAC-Oxamil-24-SL.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-DAC-Oxamil-24-SL.pdf"
+  },
+  {
+    "producto": "DASH 34.9 EC",
+    "tipo": "hoja",
+    "nombre": "MSDS-DASH-34.9-EC.PDF",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-DASH-34.9-EC.PDF"
   }
 ]
