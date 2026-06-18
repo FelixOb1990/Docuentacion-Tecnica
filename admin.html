@@ -540,89 +540,129 @@ function handleDrop(e) {
   }
 }
 
-/* ─── SUBIR DOCUMENTO ────────────────────────────────────── */
+/* ─── SUBIR DOCUMENTO (CORREGIDO SIN CORS) ───────────────── */
 async function subirDocumento() {
   const producto = $('f-producto').value.trim();
   const tipo     = $('f-tipo').value;
 
-  if (!producto) { toast('Escribí el nombre del producto', 'error'); return; }
-  if (!selectedFile) { toast('Seleccioná un archivo PDF', 'error'); return; }
+  if (!producto) {
+    toast('Escribí el nombre del producto', 'error');
+    return;
+  }
+
+  if (!selectedFile) {
+    toast('Seleccioná un archivo PDF', 'error');
+    return;
+  }
 
   const btn = $('btn-upload');
   btn.disabled = true;
   $('progress-wrap').style.display = 'block';
 
   try {
-    // 1. Leer el archivo como base64
+    /* 1. Convertir archivo a base64 */
     setProgress(10, 'Leyendo archivo...');
     const base64 = await fileToBase64(selectedFile);
 
-    // 2. Obtener el release para subir el asset
-    setProgress(25, 'Buscando release...');
-    const releaseRes = await gh(`/repos/${OWNER}/${REPO}/releases/tags/${RELEASE_TAG}`);
-    if (!releaseRes.ok) throw new Error(`No se encontró el release "${RELEASE_TAG}"`);
-    const release = await releaseRes.json();
+    /* 2. Nombre seguro del archivo */
+    const safeName = selectedFile.name
+      .replace(/\s+/g, '-')
+      .replace(/[^a-zA-Z0-9.\-_]/g, '');
 
-    // 3. Subir el PDF como asset del release
-    setProgress(45, 'Subiendo PDF...');
-    const uploadUrl = release.upload_url.replace('{?name,label}', '');
-    const uploadRes = await fetch(`${uploadUrl}?name=${encodeURIComponent(selectedFile.name)}`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/pdf',
-      },
-      body: selectedFile
+    const path = `uploads/${safeName}`;
+
+    /* 3. Verificar si ya existe */
+    setProgress(25, 'Verificando archivo...');
+    let existingSha = null;
+
+    const checkRes = await gh(`/repos/${OWNER}/${REPO}/contents/${path}?ref=${BRANCH}`);
+    if (checkRes.ok) {
+      const existing = await checkRes.json();
+      existingSha = existing.sha;
+    }
+
+    /* 4. Subir archivo al repo */
+    setProgress(50, existingSha ? 'Actualizando archivo...' : 'Subiendo archivo...');
+
+    const uploadRes = await gh(`/repos/${OWNER}/${REPO}/contents/${path}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: existingSha
+          ? `Actualizar archivo: ${safeName}`
+          : `Subir archivo: ${safeName}`,
+        content: base64,
+        sha: existingSha || undefined,
+        branch: BRANCH
+      })
     });
 
     if (!uploadRes.ok) {
       const err = await uploadRes.json();
-      // Si ya existe el archivo, lo aceptamos y usamos la URL anterior
-      if (!err.errors?.some(e => e.code === 'already_exists')) {
-        throw new Error('Error subiendo PDF: ' + (err.message || uploadRes.status));
-      }
+      throw new Error('Error subiendo archivo: ' + (err.message || uploadRes.status));
     }
 
-    setProgress(70, 'Actualizando catálogo...');
+    /* 5. URL pública */
+    const fileUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/uploads/${encodeURIComponent(safeName)}`;
 
-    // 4. Obtener el SHA actual de catalogo.json
+    /* 6. Obtener catalogo */
+    setProgress(70, 'Actualizando catálogo...');
     const catRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}?ref=${BRANCH}`);
     if (!catRes.ok) throw new Error('No se pudo leer catalogo.json');
+
     const catFile = await catRes.json();
 
-    // 5. Agregar la nueva entrada
+    /* 7. Crear entrada */
     const newEntry = {
       producto: producto,
       tipo: tipo,
-      nombre: selectedFile.name,
-      url: `https://github.com/${OWNER}/${REPO}/releases/download/${RELEASE_TAG}/${encodeURIComponent(selectedFile.name)}`
+      nombre: safeName,
+      url: fileUrl
     };
 
-    const updatedData = [...catalogData, newEntry];
-    const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(updatedData, null, 2))));
+    /* 8. Evitar duplicados exactos */
+    const exists = catalogData.some(i =>
+      i.producto.toLowerCase() === producto.toLowerCase() &&
+      i.tipo === tipo &&
+      i.nombre === safeName
+    );
 
-    // 6. Hacer commit del catalogo.json actualizado
+    if (exists) {
+      throw new Error('Este documento ya existe en el catálogo');
+    }
+
+    const updatedData = [...catalogData, newEntry];
+
+    const newContent = btoa(
+      unescape(encodeURIComponent(JSON.stringify(updatedData, null, 2)))
+    );
+
+    /* 9. Guardar catalogo */
     const commitRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message: `Agregar ${tipo}: ${producto} (${selectedFile.name})`,
+        message: `Agregar ${tipo}: ${producto} (${safeName})`,
         content: newContent,
         sha: catFile.sha,
         branch: BRANCH
       })
     });
 
-    if (!commitRes.ok) throw new Error('Error actualizando catálogo');
+    if (!commitRes.ok) {
+      throw new Error('Error actualizando catálogo');
+    }
 
+    /* 10. UI update */
     setProgress(100, '¡Listo!');
+
     catalogData = updatedData;
     renderStats();
     renderLista(catalogData);
 
     toast(`✓ "${producto}" agregado correctamente`);
 
-    // Reset form
+    /* Reset */
     setTimeout(() => {
       $('f-producto').value = '';
       selectedFile = null;
