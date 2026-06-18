@@ -1000,11 +1000,5 @@
     "tipo": "panfleto",
     "nombre": "Panfleto.Storm.pdf",
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/Panfleto.Storm.pdf"
-  },
-  {
-    "producto": "POLYRAM",
-    "tipo": "panfleto",
-    "nombre": "Panfleto.Facet.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto.Facet.pdf"
   }
 ]
