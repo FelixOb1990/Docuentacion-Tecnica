@@ -314,14 +314,26 @@ body {
 
 /* Panfleto → blanco sobre negro */
 .boton.panfleto {
-  background: var(--c-black);
-  border-color: #333;
-  color: var(--c-white);
+  background: var(--c-green-lt);
+  border-color: var(--c-green-mid);
+  color: var(--c-green-dk);
 }
 
 .boton.panfleto:hover {
-  background: var(--c-green-dk);
-  border-color: var(--c-green);
+  background: var(--c-green);
+  border-color: var(--c-green-dk);
+  color: var(--c-white);
+}
+/* Panfleto → blanco sobre negro */
+.boton.ficha {
+  background: var(--c-green-lt);
+  border-color: var(--c-green-mid);
+  color: var(--c-green-dk);
+}
+
+.boton.ficha:hover {
+  background: var(--c-green);
+  border-color: var(--c-green-dk);
   color: var(--c-white);
 }
 
