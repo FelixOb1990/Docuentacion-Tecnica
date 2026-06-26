@@ -1126,5 +1126,11 @@
     "tipo": "panfleto",
     "nombre": "Acrobat-MZ-69-WP.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Acrobat-MZ-69-WP.pdf"
+  },
+  {
+    "producto": "BACSTAR 25 WG",
+    "tipo": "hoja",
+    "nombre": "MSDS-BACSTAR-25-WG.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-BACSTAR-25-WG.pdf"
   }
 ]
