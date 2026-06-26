@@ -1138,5 +1138,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-AmyloX.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-AmyloX.pdf"
+  },
+  {
+    "producto": "Amylox 101.8 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Amylox-101.8-SC.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Amylox-101.8-SC.pdf"
   }
 ]
