@@ -1132,5 +1132,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-BACSTAR-25-WG.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-BACSTAR-25-WG.pdf"
+  },
+  {
+    "producto": "AMYLOX 101.8 SC",
+    "tipo": "hoja",
+    "nombre": "MSDS-AmyloX.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-AmyloX.pdf"
   }
 ]
