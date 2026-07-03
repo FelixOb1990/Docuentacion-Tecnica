@@ -1204,5 +1204,11 @@
     "tipo": "panfleto",
     "nombre": "FT-Eckosil.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Eckosil.pdf"
+  },
+  {
+    "producto": "GrapD Lim",
+    "tipo": "panfleto",
+    "nombre": "FT-GRAP-D-LIM.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-D-LIM.pdf"
   }
 ]
