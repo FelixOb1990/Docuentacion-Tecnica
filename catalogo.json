@@ -1198,5 +1198,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Acrozell.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Acrozell.pdf"
+  },
+  {
+    "producto": "Eckosil",
+    "tipo": "panfleto",
+    "nombre": "FT-Eckosil.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Eckosil.pdf"
   }
 ]
