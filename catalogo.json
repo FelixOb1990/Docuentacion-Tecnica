@@ -1210,5 +1210,11 @@
     "tipo": "panfleto",
     "nombre": "FT-GRAP-D-LIM.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-D-LIM.pdf"
+  },
+  {
+    "producto": "Grapsuper Gun",
+    "tipo": "panfleto",
+    "nombre": "FT-GRAP-SUPER-GUN.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-SUPER-GUN.pdf"
   }
 ]
