@@ -342,12 +342,6 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CAB.TRACKER.pdf"
   },
   {
-    "producto": "Manvert Calcio 20.2%",
-    "tipo": "hoja",
-    "nombre": "MSDS.MANVERT.CALCIO.20.2.pdf",
-    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CALCIO.20.2.pdf"
-  },
-  {
     "producto": "Manvert Duplo AL",
     "tipo": "hoja",
     "nombre": "MSDS.MANVERT.DUPLO.AL.pdf",
@@ -1104,8 +1098,164 @@
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-biolet.pdf"
   },
   {
-    "producto": "Manvert Calcio",
+    "producto": "Manvert Estimulante Plus",
     "tipo": "ficha",
+    "nombre": "FT-Manvert-Estimulante-plus.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-Estimulante-plus.pdf"
+  },
+  {
+    "producto": "Acrobat MZ 69 WP",
+    "tipo": "panfleto",
+    "nombre": "Acrobat-MZ-69-WP.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Acrobat-MZ-69-WP.pdf"
+  },
+  {
+    "producto": "BACSTAR 25 WG",
+    "tipo": "hoja",
+    "nombre": "MSDS-BACSTAR-25-WG.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-BACSTAR-25-WG.pdf"
+  },
+  {
+    "producto": "Amylox 101.8 SC",
+    "tipo": "hoja",
+    "nombre": "MSDS-AmyloX.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-AmyloX.pdf"
+  },
+  {
+    "producto": "Amylox 101.8 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Amylox-101.8-SC.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Amylox-101.8-SC.pdf"
+  },
+  {
+    "producto": "ENGEO 24.7 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Engeo.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Engeo.pdf"
+  },
+  {
+    "producto": "FUSILADE 12.5 EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Fusilade.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Fusilade.pdf"
+  },
+  {
+    "producto": "Gesaprim 90 WG",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Gesaprim-90-WG.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Gesaprim-90-WG.pdf"
+  },
+  {
+    "producto": "Pegasus 50 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Pegasus.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Pegasus.pdf"
+  },
+  {
+    "producto": "Tribel 48 EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Tribel.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Tribel.pdf"
+  },
+  {
+    "producto": "Sunfire 24 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Sunfire.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Sunfire.pdf"
+  },
+  {
+    "producto": "Tronazell 60 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Tronazell.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Tronazell.pdf"
+  },
+  {
+    "producto": "Serifel 10 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Serifel.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Serifel.pdf"
+  },
+  {
+    "producto": "Acrozell 69 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Acrozell.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Acrozell.pdf"
+  },
+  {
+    "producto": "Eckosil",
+    "tipo": "panfleto",
+    "nombre": "FT-Eckosil.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Eckosil.pdf"
+  },
+  {
+    "producto": "GrapD Lim",
+    "tipo": "panfleto",
+    "nombre": "FT-GRAP-D-LIM.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-D-LIM.pdf"
+  },
+  {
+    "producto": "Grapsuper Gun",
+    "tipo": "panfleto",
+    "nombre": "FT-GRAP-SUPER-GUN.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-SUPER-GUN.pdf"
+  },
+  {
+    "producto": "Grapsuper Gun SR",
+    "tipo": "panfleto",
+    "nombre": "FT-GRAP-SUPER-GUN-SR.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-SUPER-GUN-SR.pdf"
+  },
+  {
+    "producto": "Oncol 10 GR",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Oncol-10-GR.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Oncol-10-GR.pdf"
+  },
+  {
+    "producto": "Matric 5 SG",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Matric-5-SC.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Matric-5-SC.pdf"
+  },
+  {
+    "producto": "Manvert Silikon",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-silikon.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silikon.pdf"
+  },
+  {
+    "producto": "Manvert Silargon Terra",
+    "tipo": "hoja",
+    "nombre": "FT-Manvert-silargon-terra.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
+  },
+  {
+    "producto": "Manvert Potasio 39%",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-potasio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-potasio.pdf"
+  },
+  {
+    "producto": "Manvert Silargon Terra",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-silargon-terra.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
+  },
+  {
+    "producto": "Manvert Biolet",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-biolet.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-biolet.pdf"
+  },
+  {
+    "producto": "Manvert Boro",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-boro.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-boro.pdf"
+  },
+  {
+    "producto": "Manvert Calcio",
+    "tipo": "panfleto",
     "nombre": "FT-Manvert-calcio.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
   },
@@ -1114,11 +1264,5 @@
     "tipo": "hoja",
     "nombre": "MSDS-MANVERT-CALCIO-20.2.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-MANVERT-CALCIO-20.2.pdf"
-  },
-  {
-    "producto": "Manvert Estimulante Plus",
-    "tipo": "ficha",
-    "nombre": "FT-Manvert-Estimulante-plus.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-Estimulante-plus.pdf"
   }
 ]
