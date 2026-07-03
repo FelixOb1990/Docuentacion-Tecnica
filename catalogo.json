@@ -1144,5 +1144,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Amylox-101.8-SC.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Amylox-101.8-SC.pdf"
+  },
+  {
+    "producto": "ENGEO 24.7 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Engeo.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Engeo.pdf"
   }
 ]
