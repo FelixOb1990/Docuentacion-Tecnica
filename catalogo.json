@@ -1104,18 +1104,6 @@
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-biolet.pdf"
   },
   {
-    "producto": "Manvert Calcio",
-    "tipo": "ficha",
-    "nombre": "FT-Manvert-calcio.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
-  },
-  {
-    "producto": "Manvert Calcio",
-    "tipo": "hoja",
-    "nombre": "MSDS-MANVERT-CALCIO-20.2.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-MANVERT-CALCIO-20.2.pdf"
-  },
-  {
     "producto": "Manvert Estimulante Plus",
     "tipo": "ficha",
     "nombre": "FT-Manvert-Estimulante-plus.pdf",
@@ -1270,11 +1258,5 @@
     "tipo": "panfleto",
     "nombre": "FT-Manvert-boro.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-boro.pdf"
-  },
-  {
-    "producto": "Manvert Calcio",
-    "tipo": "panfleto",
-    "nombre": "FT-Manvert-calcio.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
   }
 ]
