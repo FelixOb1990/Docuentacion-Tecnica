@@ -1270,5 +1270,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Actellic.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Actellic.pdf"
+  },
+  {
+    "producto": "Imidazell 35 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Imidazell.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Imidazell.pdf"
   }
 ]
