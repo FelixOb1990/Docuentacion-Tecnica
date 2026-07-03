@@ -1174,5 +1174,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Tribel.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Tribel.pdf"
+  },
+  {
+    "producto": "Sunfire 24 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Sunfire.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Sunfire.pdf"
   }
 ]
