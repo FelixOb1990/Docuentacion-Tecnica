@@ -1216,5 +1216,11 @@
     "tipo": "panfleto",
     "nombre": "FT-GRAP-SUPER-GUN.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-SUPER-GUN.pdf"
+  },
+  {
+    "producto": "Grapsuper Gun SR",
+    "tipo": "panfleto",
+    "nombre": "FT-GRAP-SUPER-GUN-SR.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-GRAP-SUPER-GUN-SR.pdf"
   }
 ]
