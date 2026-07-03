@@ -1150,5 +1150,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Engeo.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Engeo.pdf"
+  },
+  {
+    "producto": "FUSILADE 12.5 EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Fusilade.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Fusilade.pdf"
   }
 ]
