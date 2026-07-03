@@ -1258,5 +1258,11 @@
     "tipo": "panfleto",
     "nombre": "FT-Manvert-boro.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-boro.pdf"
+  },
+  {
+    "producto": "Manvert Calcio",
+    "tipo": "panfleto",
+    "nombre": "FT-Manvert-calcio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
   }
 ]
