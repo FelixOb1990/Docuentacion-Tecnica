@@ -342,6 +342,12 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CAB.TRACKER.pdf"
   },
   {
+    "producto": "Manvert Calcio 20.2%",
+    "tipo": "hoja",
+    "nombre": "MSDS.MANVERT.CALCIO.20.2.pdf",
+    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CALCIO.20.2.pdf"
+  },
+  {
     "producto": "Manvert Duplo AL",
     "tipo": "hoja",
     "nombre": "MSDS.MANVERT.DUPLO.AL.pdf",
@@ -1264,5 +1270,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-MANVERT-CALCIO-20.2.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-MANVERT-CALCIO-20.2.pdf"
+  },
+  {
+    "producto": "Actellic 50 EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Actellic.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Actellic.pdf"
   }
 ]
