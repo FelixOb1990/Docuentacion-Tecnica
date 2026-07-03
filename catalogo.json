@@ -1162,5 +1162,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Gesaprim-90-WG.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Gesaprim-90-WG.pdf"
+  },
+  {
+    "producto": "Pegasus 50 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Pegasus.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Pegasus.pdf"
   }
 ]
