@@ -1276,5 +1276,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Imidazell.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Imidazell.pdf"
+  },
+  {
+    "producto": "Limpiapotrero 30.4 SL",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Limpiapotreros.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Limpiapotreros.pdf"
   }
 ]
