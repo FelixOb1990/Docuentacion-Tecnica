@@ -105,22 +105,30 @@ function renderStats() {
   const productos = new Set(catalogData.map(i => i.producto.toUpperCase()));
   const hojas     = catalogData.filter(i => i.tipo === 'hoja').length;
   const panfletos = catalogData.filter(i => i.tipo === 'panfleto').length;
+  const fichas    = catalogData.filter(i => i.tipo === 'ficha').length;
   $('st-total').textContent     = productos.size;
   $('st-hojas').textContent     = hojas;
   $('st-panfletos').textContent = panfletos;
+  $('st-fichas').textContent    = fichas;
 }
+
+/* Etiquetas legibles por tipo de documento */
+const TIPO_LABELS = {
+  hoja: 'Hoja',
+  panfleto: 'Panfleto',
+  ficha: 'Ficha Técnica'
+};
 
 /* ─── LISTA CATÁLOGO ─────────────────────────────────────── */
 function renderLista(data) {
   const list = $('cat-list');
 
-  // Agrupar por producto
+  // Agrupar por producto, manteniendo cada documento individual
   const productos = {};
   data.forEach(item => {
     const k = item.producto.toUpperCase();
-    if (!productos[k]) productos[k] = { nombre: item.producto, hojas: [], panfletos: [] };
-    if (item.tipo === 'hoja')     productos[k].hojas.push(item);
-    if (item.tipo === 'panfleto') productos[k].panfletos.push(item);
+    if (!productos[k]) productos[k] = { nombre: item.producto, docs: [] };
+    productos[k].docs.push(item);
   });
 
   const entries = Object.values(productos).sort((a,b) => a.nombre.localeCompare(b.nombre, 'es'));
@@ -132,19 +140,29 @@ function renderLista(data) {
 
   list.innerHTML = entries.map(p => `
     <div class="cat-item">
-      <div class="cat-item-info">
-        <div class="cat-item-name">${escHtml(p.nombre)}</div>
-        <div class="cat-item-type">
-          ${p.hojas.length    ? '<span class="tag hoja">Hoja</span>'         : ''}
-          ${p.panfletos.length ? '<span class="tag panfleto">Panfleto</span>' : ''}
-        </div>
-      </div>
-      <div class="cat-item-actions">
-        <button class="btn-del" onclick="eliminarProducto('${escHtml(p.nombre)}')">Eliminar</button>
+      <div class="cat-item-name">${escHtml(p.nombre)}</div>
+      <div class="cat-item-docs">
+        ${p.docs.map(d => `
+          <div class="doc-row">
+            <span class="tag ${escHtml(d.tipo)}">${escHtml(TIPO_LABELS[d.tipo] || d.tipo)}</span>
+            <span class="doc-file" title="${escHtml(d.nombre)}">${escHtml(d.nombre)}</span>
+            <button class="btn-del" data-producto="${escHtml(d.producto)}" data-tipo="${escHtml(d.tipo)}" data-nombre="${escHtml(d.nombre)}">Eliminar</button>
+          </div>
+        `).join('')}
       </div>
     </div>
   `).join('');
 }
+
+// Delegación de eventos para los botones de eliminar (evita problemas
+// con comillas/caracteres especiales en nombres de producto o archivo)
+document.addEventListener('DOMContentLoaded', () => {
+  $('cat-list').addEventListener('click', e => {
+    const btn = e.target.closest('.btn-del');
+    if (!btn) return;
+    eliminarDocumento(btn.dataset.producto, btn.dataset.tipo, btn.dataset.nombre);
+  });
+});
 
 function filtrarLista() {
   const q = $('cat-search').value.toLowerCase();
@@ -312,17 +330,29 @@ async function subirDocumento() {
   }
 }
 
-/* ─── ELIMINAR ───────────────────────────────────────────── */
-async function eliminarProducto(nombre) {
-  if (!confirm(`¿Eliminar todas las entradas de "${nombre}" del catálogo?\n\nNota: el archivo PDF en el release NO se elimina.`)) return;
+/* ─── ELIMINAR (documento individual) ────────────────────── */
+async function eliminarDocumento(producto, tipo, nombre) {
+  const tipoLabel = TIPO_LABELS[tipo] || tipo;
+
+  if (!confirm(`¿Eliminar "${nombre}" (${tipoLabel}) de "${producto}"?\n\nNota: el archivo PDF en el repositorio NO se elimina, solo se quita del catálogo.`)) return;
 
   try {
     const catRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}?ref=${BRANCH}`);
+    if (!catRes.ok) throw new Error('No se pudo leer catalogo.json');
     const catFile = await catRes.json();
 
+    // Elimina solo la entrada que coincide exactamente en producto + tipo + nombre de archivo
     const updatedData = catalogData.filter(i =>
-      i.producto.toUpperCase() !== nombre.toUpperCase()
+      !(
+        i.producto.toUpperCase() === producto.toUpperCase() &&
+        i.tipo === tipo &&
+        i.nombre === nombre
+      )
     );
+
+    if (updatedData.length === catalogData.length) {
+      throw new Error('No se encontró el documento a eliminar');
+    }
 
     const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(updatedData, null, 2))));
 
@@ -330,7 +360,7 @@ async function eliminarProducto(nombre) {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message: `Eliminar producto: ${nombre}`,
+        message: `Eliminar documento: ${nombre} (${producto} · ${tipo})`,
         content: newContent,
         sha: catFile.sha,
         branch: BRANCH
