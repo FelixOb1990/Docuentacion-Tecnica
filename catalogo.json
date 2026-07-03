@@ -1180,5 +1180,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Sunfire.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Sunfire.pdf"
+  },
+  {
+    "producto": "Tronazell 60 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Tronazell.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Tronazell.pdf"
   }
 ]
