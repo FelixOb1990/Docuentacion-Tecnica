@@ -1300,5 +1300,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Proclaim.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Proclaim.pdf"
+  },
+  {
+    "producto": "Opera 18.3 SE",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Opera.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Opera.pdf"
   }
 ]
