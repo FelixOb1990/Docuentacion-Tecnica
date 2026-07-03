@@ -1282,5 +1282,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Limpiapotreros.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Limpiapotreros.pdf"
+  },
+  {
+    "producto": "Vertimec 1.8 EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Vertimec.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Vertimec.pdf"
   }
 ]
