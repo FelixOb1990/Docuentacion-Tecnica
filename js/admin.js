@@ -1,22 +1,26 @@
-:root {
-      --green:     #2a7a3b;
-      --green-dk:  #1e5c2c;
-      --green-lt:  #e8f4ea;
-      --green-mid: #c8e6cc;
-      --black:     #111a11;
-      --white:     #ffffff;
-      --bg:        #f4f6f4;
-      --surface:   #ffffff;
-      --border:    #d8e4d8;
-      --text:      #111a11;
-      --text-sub:  #5a7060;
-      --red:       #c0392b;
-      --red-lt:    #fdf0ef;
-      --r: 10px; --r-sm: 6px;
-      --font-display: 'Barlow Condensed', sans-serif;
-      --font-body: 'Inter', sans-serif;
+/* ─── CONFIG ────────────────────────────────────────────── */
+const OWNER   = 'FelixOb1990';
+const REPO    = 'Docuentacion-Tecnica';
+const BRANCH  = 'main';
+const CATALOG = 'catalogo.json';
+const RELEASE_TAG = 'v1.0';   // tag del release donde se suben los PDFs
+
+/* ─── STATE ─────────────────────────────────────────────── */
+let token = '';
+let catalogData = [];
+let selectedFile = null;
+
+/* ─── HELPERS ───────────────────────────────────────────── */
+const $  = id => document.getElementById(id);
+const gh = (path, opts = {}) =>
+  fetch(`https://api.github.com${path}`, {
+    ...opts,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...(opts.headers || {})
     }
-<<<<<<< HEAD
   });
 
 function toast(msg, type = 'success') {
@@ -225,232 +229,107 @@ async function subirDocumento() {
     if (checkRes.ok) {
       const existing = await checkRes.json();
       existingSha = existing.sha;
-=======
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: var(--font-body);
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      -webkit-font-smoothing: antialiased;
->>>>>>> cf8195b3ebbee340fec5d48e9fdef77aa2cd676e
     }
 
-    /* ── HEADER ── */
-    header {
-      background: var(--black);
-      border-bottom: 3px solid var(--green);
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .logo-badge {
-      background: var(--green);
-      color: var(--white);
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      padding: 5px 12px;
-      border-radius: var(--r-sm);
-    }
-    .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
-    .brand-name { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--white); }
-    .brand-sub  { font-size: 11px; color: var(--green-mid); text-transform: uppercase; letter-spacing: 0.07em; }
-    .header-right { display: flex; align-items: center; gap: 10px; }
-    .btn-logout {
-      background: none; border: 1px solid #444; color: #aaa;
-      padding: 6px 12px; border-radius: var(--r-sm); cursor: pointer;
-      font-size: 12px; font-family: var(--font-body); transition: all 0.15s;
-    }
-    .btn-logout:hover { border-color: var(--red); color: var(--red); }
-    #user-info { font-size: 12px; color: var(--green-mid); }
+    /* 4. Subir archivo al repo */
+    setProgress(50, existingSha ? 'Actualizando archivo...' : 'Subiendo archivo...');
 
-    /* ── MAIN ── */
-    main { flex: 1; max-width: 960px; width: 100%; margin: 0 auto; padding: 32px 24px; }
+    const uploadRes = await gh(`/repos/${OWNER}/${REPO}/contents/${path}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: existingSha
+          ? `Actualizar archivo: ${safeName}`
+          : `Subir archivo: ${safeName}`,
+        content: base64,
+        sha: existingSha || undefined,
+        branch: BRANCH
+      })
+    });
 
-    /* ── LOGIN ── */
-    #login-screen {
-      max-width: 460px; margin: 60px auto;
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      border-radius: var(--r);
-      padding: 40px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-    #login-screen h2 {
-      font-family: var(--font-display);
-      font-size: 26px; font-weight: 700;
-      margin-bottom: 6px;
-    }
-    #login-screen p { font-size: 13px; color: var(--text-sub); margin-bottom: 28px; line-height: 1.5; }
-    .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-    .field label { font-size: 13px; font-weight: 500; color: var(--text); }
-    .field input, .field select {
-      padding: 11px 14px;
-      border: 1.5px solid var(--border);
-      border-radius: var(--r-sm);
-      font-family: var(--font-body);
-      font-size: 14px;
-      color: var(--text);
-      background: var(--white);
-      outline: none;
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
-    .field input:focus, .field select:focus {
-      border-color: var(--green);
-      box-shadow: 0 0 0 3px rgba(42,122,59,0.12);
-    }
-    .field .hint { font-size: 11px; color: var(--text-sub); }
-    .field .hint a { color: var(--green); text-decoration: none; }
-
-    /* ── BUTTONS ── */
-    .btn {
-      display: inline-flex; align-items: center; gap: 7px;
-      padding: 10px 18px; border-radius: var(--r-sm);
-      font-family: var(--font-body); font-size: 14px; font-weight: 500;
-      cursor: pointer; border: none; transition: all 0.15s;
-    }
-    .btn-primary { background: var(--green); color: var(--white); width: 100%; justify-content: center; }
-    .btn-primary:hover { background: var(--green-dk); }
-    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
-    .btn-danger  { background: var(--red-lt); color: var(--red); border: 1px solid #f5c6c2; }
-    .btn-danger:hover  { background: var(--red); color: var(--white); }
-    .btn-ghost { background: none; border: 1.5px solid var(--border); color: var(--text-sub); }
-    .btn-ghost:hover { border-color: var(--green); color: var(--green); }
-
-    /* ── ADMIN PANEL ── */
-    #admin-panel { display: none; }
-    .panel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
-    @media (max-width: 700px) { .panel-grid { grid-template-columns: 1fr; } }
-
-    /* ── CARDS ── */
-    .card {
-      background: var(--surface); border: 1.5px solid var(--border);
-      border-radius: var(--r); padding: 24px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-    .card h3 {
-      font-family: var(--font-display); font-size: 20px; font-weight: 700;
-      margin-bottom: 18px; display: flex; align-items: center; gap: 8px;
-    }
-    .card h3 .pill {
-      font-family: var(--font-body); font-size: 11px; font-weight: 500;
-      background: var(--green-lt); color: var(--green); padding: 2px 8px;
-      border-radius: 20px; letter-spacing: 0.03em;
+    if (!uploadRes.ok) {
+      const err = await uploadRes.json();
+      throw new Error('Error subiendo archivo: ' + (err.message || uploadRes.status));
     }
 
-    /* ── UPLOAD ZONE ── */
-    .upload-zone {
-      border: 2px dashed var(--border);
-      border-radius: var(--r-sm);
-      padding: 28px 20px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.15s;
-      margin-bottom: 14px;
-      background: var(--bg);
-    }
-    .upload-zone:hover, .upload-zone.drag-over {
-      border-color: var(--green);
-      background: var(--green-lt);
-    }
-    .upload-zone input { display: none; }
-    .upload-zone .icon { font-size: 28px; margin-bottom: 8px; }
-    .upload-zone p { font-size: 13px; color: var(--text-sub); }
-    .upload-zone .file-name {
-      font-size: 13px; font-weight: 500; color: var(--green);
-      margin-top: 6px;
+    /* 5. URL pública */
+    const fileUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/uploads/${encodeURIComponent(safeName)}`;
+
+    /* 6. Obtener catalogo */
+    setProgress(70, 'Actualizando catálogo...');
+    const catRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}?ref=${BRANCH}`);
+    if (!catRes.ok) throw new Error('No se pudo leer catalogo.json');
+
+    const catFile = await catRes.json();
+
+    /* 7. Crear entrada */
+    const newEntry = {
+      producto: producto,
+      tipo: tipo,
+      nombre: safeName,
+      url: fileUrl
+    };
+
+    /* 8. Evitar duplicados exactos */
+    const exists = catalogData.some(i =>
+      i.producto.toLowerCase() === producto.toLowerCase() &&
+      i.tipo === tipo &&
+      i.nombre === safeName
+    );
+
+    if (exists) {
+      throw new Error('Este documento ya existe en el catálogo');
     }
 
-    /* ── PROGRESS ── */
-    .progress-wrap { margin-top: 12px; display: none; }
-    .progress-bar {
-      height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
-    }
-    .progress-fill {
-      height: 100%; background: var(--green);
-      width: 0%; transition: width 0.3s;
-      border-radius: 3px;
-    }
-    .progress-label { font-size: 12px; color: var(--text-sub); margin-top: 6px; }
+    const updatedData = [...catalogData, newEntry];
 
-    /* ── CATALOG LIST ── */
-    .cat-search {
-      width: 100%; padding: 9px 12px;
-      border: 1.5px solid var(--border); border-radius: var(--r-sm);
-      font-family: var(--font-body); font-size: 13px;
-      outline: none; margin-bottom: 14px;
-      transition: border-color 0.15s;
-    }
-    .cat-search:focus { border-color: var(--green); }
+    const newContent = btoa(
+      unescape(encodeURIComponent(JSON.stringify(updatedData, null, 2)))
+    );
 
-    .cat-list { display: flex; flex-direction: column; gap: 8px; max-height: 480px; overflow-y: auto; }
-    .cat-item {
-      padding: 10px 12px; border-radius: var(--r-sm);
-      background: var(--bg); border: 1px solid var(--border);
-    }
-    .cat-item-name {
-      font-size: 13px; font-weight: 600; white-space: nowrap;
-      overflow: hidden; text-overflow: ellipsis; margin-bottom: 8px;
-    }
-    .cat-item-docs { display: flex; flex-direction: column; gap: 6px; }
-    .doc-row {
-      display: flex; align-items: center; gap: 8px;
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--r-sm); padding: 6px 8px;
-    }
-    .doc-file {
-      flex: 1; min-width: 0; font-size: 12px; color: var(--text-sub);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .tag {
-      font-size: 10px; font-weight: 500; padding: 2px 7px; flex-shrink: 0;
-      border-radius: 20px; text-transform: uppercase; letter-spacing: 0.04em;
-    }
-    .tag.hoja { background: var(--green-lt); color: var(--green); }
-    .tag.panfleto { background: #111a11; color: #c8e6cc; }
-    .tag.ficha { background: #fff4d9; color: #8a6210; }
-    .btn-del {
-      background: none; border: 1px solid #f5c6c2; color: var(--red);
-      padding: 4px 10px; border-radius: var(--r-sm); font-size: 12px;
-      cursor: pointer; font-family: var(--font-body); transition: all 0.15s;
-      flex-shrink: 0;
-    }
-    .btn-del:hover { background: var(--red); color: white; }
+    /* 9. Guardar catalogo */
+    const commitRes = await gh(`/repos/${OWNER}/${REPO}/contents/${CATALOG}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Agregar ${tipo}: ${producto} (${safeName})`,
+        content: newContent,
+        sha: catFile.sha,
+        branch: BRANCH
+      })
+    });
 
-    /* ── TOAST ── */
-    #toast {
-      position: fixed; bottom: 24px; right: 24px;
-      padding: 12px 18px; border-radius: var(--r-sm);
-      font-size: 13px; font-weight: 500;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      transform: translateY(80px); opacity: 0;
-      transition: all 0.25s; z-index: 100;
+    if (!commitRes.ok) {
+      throw new Error('Error actualizando catálogo');
     }
-    #toast.show { transform: translateY(0); opacity: 1; }
-    #toast.success { background: var(--green); color: white; }
-    #toast.error   { background: var(--red); color: white; }
 
-    /* ── STATS BAR ── */
-    .stats {
-      display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;
-    }
-    .stat {
-      background: var(--surface); border: 1.5px solid var(--border);
-      border-radius: var(--r); padding: 14px 20px; flex: 1; min-width: 120px;
-    }
-    .stat-val { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--green); line-height: 1; }
-    .stat-lbl { font-size: 11px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
+    /* 10. UI update */
+    setProgress(100, '¡Listo!');
 
-    /* ── EMPTY ── */
-    .empty { text-align: center; padding: 30px; color: var(--text-sub); font-size: 13px; }
+    catalogData = updatedData;
+    renderStats();
+    renderLista(catalogData);
 
-<<<<<<< HEAD
+    toast(`✓ "${producto}" agregado correctamente`);
+
+    /* Reset */
+    setTimeout(() => {
+      $('f-producto').value = '';
+      selectedFile = null;
+      $('f-file').value = '';
+      $('file-name-label').textContent = '';
+      $('btn-upload').disabled = true;
+      $('progress-wrap').style.display = 'none';
+      setProgress(0, '');
+    }, 1500);
+
+  } catch (e) {
+    toast(e.message, 'error');
+    $('progress-wrap').style.display = 'none';
+    btn.disabled = false;
+  }
+}
+
 /* ─── ELIMINAR (documento individual) ────────────────────── */
 async function eliminarDocumento(producto, tipo, nombre) {
   const tipoLabel = TIPO_LABELS[tipo] || tipo;
@@ -512,12 +391,3 @@ function fileToBase64(file) {
 function escHtml(str) {
   return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-=======
-    /* ── FOOTER ── */
-    footer {
-      background: var(--black); border-top: 2px solid var(--green);
-      padding: 14px 24px; text-align: center;
-      font-size: 12px; color: #7a9a80;
-    }
-    footer a { color: var(--green-mid); text-decoration: none; }
->>>>>>> cf8195b3ebbee340fec5d48e9fdef77aa2cd676e
