@@ -1360,5 +1360,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-win-ca.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-win-ca.pdf"
+  },
+  {
+    "producto": "Manvert Zinc 9.6%",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-zinc.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-zinc.pdf"
   }
 ]
