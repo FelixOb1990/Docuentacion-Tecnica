@@ -1231,12 +1231,6 @@
   },
   {
     "producto": "Manvert Silargon Terra",
-    "tipo": "hoja",
-    "nombre": "FT-Manvert-silargon-terra.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
-  },
-  {
-    "producto": "Manvert Silargon Terra",
     "tipo": "panfleto",
     "nombre": "FT-Manvert-silargon-terra.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
@@ -1360,11 +1354,5 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-potasio.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-potasio.pdf"
-  },
-  {
-    "producto": "Manvert Silargon Terra",
-    "tipo": "ficha",
-    "nombre": "FT-Manvert-silargon-terra.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
   }
 ]
