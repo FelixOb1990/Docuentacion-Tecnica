@@ -342,12 +342,6 @@
     "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CAB.TRACKER.pdf"
   },
   {
-    "producto": "Manvert Calcio 20.2%",
-    "tipo": "hoja",
-    "nombre": "MSDS.MANVERT.CALCIO.20.2.pdf",
-    "url": "https://github.com/FelixOb1990/Docuentacion-Tecnica/releases/download/v1.0/MSDS.MANVERT.CALCIO.20.2.pdf"
-  },
-  {
     "producto": "Manvert Duplo AL",
     "tipo": "hoja",
     "nombre": "MSDS.MANVERT.DUPLO.AL.pdf",
@@ -1248,10 +1242,10 @@
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
   },
   {
-    "producto": "Manvert Biolet",
+    "producto": "Manvert Calcio",
     "tipo": "panfleto",
-    "nombre": "FT-Manvert-biolet.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-biolet.pdf"
+    "nombre": "FT-Manvert-calcio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
   },
   {
     "producto": "Manvert Calcio",
