@@ -1312,5 +1312,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-foliplus.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-foliplus.pdf"
+  },
+  {
+    "producto": "Manvert Fosika",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-fosika.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-fosika.pdf"
   }
 ]
