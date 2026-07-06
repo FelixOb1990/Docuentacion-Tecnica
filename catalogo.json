@@ -1306,5 +1306,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-calcio.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-calcio.pdf"
+  },
+  {
+    "producto": "Manvert Foliplus",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-foliplus.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-foliplus.pdf"
   }
 ]
