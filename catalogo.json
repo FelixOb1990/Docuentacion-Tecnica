@@ -1324,5 +1324,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-hierro.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-hierro.pdf"
+  },
+  {
+    "producto": "Manvert Magnesio 10.8%",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-magnesio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-magnesio.pdf"
   }
 ]
