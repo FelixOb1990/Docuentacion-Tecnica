@@ -1330,5 +1330,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-magnesio.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-magnesio.pdf"
+  },
+  {
+    "producto": "Manvert Miconic",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-miconic.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-miconic.pdf"
   }
 ]
