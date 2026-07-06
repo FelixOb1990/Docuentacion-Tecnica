@@ -1224,30 +1224,6 @@
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Matric-5-SC.pdf"
   },
   {
-    "producto": "Manvert Silikon",
-    "tipo": "panfleto",
-    "nombre": "FT-Manvert-silikon.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silikon.pdf"
-  },
-  {
-    "producto": "Manvert Silargon Terra",
-    "tipo": "hoja",
-    "nombre": "FT-Manvert-silargon-terra.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
-  },
-  {
-    "producto": "Manvert Potasio 39%",
-    "tipo": "panfleto",
-    "nombre": "FT-Manvert-potasio.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-potasio.pdf"
-  },
-  {
-    "producto": "Manvert Silargon Terra",
-    "tipo": "panfleto",
-    "nombre": "FT-Manvert-silargon-terra.pdf",
-    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silargon-terra.pdf"
-  },
-  {
     "producto": "Manvert Biolet",
     "tipo": "panfleto",
     "nombre": "FT-Manvert-biolet.pdf",
@@ -1348,5 +1324,29 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-movili-ca.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-movili-ca.pdf"
+  },
+  {
+    "producto": "Manvert Optim pH",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-optim-pH.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-optim-pH.pdf"
+  },
+  {
+    "producto": "Manvert Phytosoap",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-phytosoap.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-phytosoap.pdf"
+  },
+  {
+    "producto": "Manvert Potasio 39%",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-potasio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-potasio.pdf"
+  },
+  {
+    "producto": "Manvert Silikon",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-silikon.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-silikon.pdf"
   }
 ]
