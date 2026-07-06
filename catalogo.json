@@ -1348,5 +1348,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-movili-ca.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-movili-ca.pdf"
+  },
+  {
+    "producto": "Manvert Optim pH",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-optim-pH.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-optim-pH.pdf"
   }
 ]
