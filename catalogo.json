@@ -1318,5 +1318,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-fosika.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-fosika.pdf"
+  },
+  {
+    "producto": "Manvert Hierro",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-hierro.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-hierro.pdf"
   }
 ]
