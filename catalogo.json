@@ -1354,5 +1354,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-phytosoap.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-phytosoap.pdf"
+  },
+  {
+    "producto": "Manvert Potasio 39%",
+    "tipo": "ficha",
+    "nombre": "FT-Manvert-potasio.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-potasio.pdf"
   }
 ]
