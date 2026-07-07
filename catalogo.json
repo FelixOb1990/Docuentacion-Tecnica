@@ -1366,5 +1366,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-Orthocide-50-WP.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-Orthocide-50-WP.pdf"
+  },
+  {
+    "producto": "Orthocide 50 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Orthocide.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Orthocide.pdf"
   }
 ]
