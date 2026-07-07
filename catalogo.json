@@ -1366,5 +1366,11 @@
     "tipo": "ficha",
     "nombre": "FT-Manvert-zinc.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Manvert-zinc.pdf"
+  },
+  {
+    "producto": "Orthocide 50 WP",
+    "tipo": "hoja",
+    "nombre": "MSDS-Orthocide-50-WP.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-Orthocide-50-WP.pdf"
   }
 ]
