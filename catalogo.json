@@ -1414,5 +1414,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Validacin.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Validacin.pdf"
+  },
+  {
+    "producto": "Vaiplex 80 WP",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Vaiplex.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Vaiplex.pdf"
   }
 ]
