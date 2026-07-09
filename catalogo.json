@@ -1396,5 +1396,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Match.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Match.pdf"
+  },
+  {
+    "producto": "Mertect 50 SC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Mertect.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Mertect.pdf"
   }
 ]
