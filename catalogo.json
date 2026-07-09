@@ -1408,5 +1408,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Uniform.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Uniform.pdf"
+  },
+  {
+    "producto": "Validacin 5 SL",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Validacin.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Validacin.pdf"
   }
 ]
