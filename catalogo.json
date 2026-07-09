@@ -1402,5 +1402,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Ridomil-Gold.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Ridomil-Gold.pdf"
+  },
+  {
+    "producto": "Uniform 43.44 SE",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Uniform.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Uniform.pdf"
   }
 ]
