@@ -1390,5 +1390,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Master-Mix-70-WP.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Master-Mix-70-WP.pdf"
+  },
+  {
+    "producto": "Match 5 EC",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Match.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Match.pdf"
   }
 ]
