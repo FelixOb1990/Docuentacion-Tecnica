@@ -1426,5 +1426,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-HEAT.PDF",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-HEAT.PDF"
+  },
+  {
+    "producto": "Heat 70 WG",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Heat.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Heat.pdf"
   }
 ]
