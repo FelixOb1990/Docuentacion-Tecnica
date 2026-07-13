@@ -1414,5 +1414,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Vaiplex.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Vaiplex.pdf"
+  },
+  {
+    "producto": "Mycoshell Tabs",
+    "tipo": "ficha",
+    "nombre": "FT-Mycoshell-Tabs.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Mycoshell-Tabs.pdf"
   }
 ]
