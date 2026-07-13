@@ -1420,5 +1420,11 @@
     "tipo": "ficha",
     "nombre": "FT-Mycoshell-Tabs.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Mycoshell-Tabs.pdf"
+  },
+  {
+    "producto": "Heat 70 WG",
+    "tipo": "hoja",
+    "nombre": "MSDS-HEAT.PDF",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-HEAT.PDF"
   }
 ]
