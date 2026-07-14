@@ -1438,5 +1438,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Kelpak.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Kelpak.pdf"
+  },
+  {
+    "producto": "Kiplant Essence",
+    "tipo": "ficha",
+    "nombre": "FT-Kiplant-Essence.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Kiplant-Essence.pdf"
   }
 ]
