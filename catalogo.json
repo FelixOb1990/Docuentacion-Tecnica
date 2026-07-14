@@ -1450,5 +1450,11 @@
     "tipo": "ficha",
     "nombre": "FT-Kiplant-Allgrip.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Kiplant-Allgrip.pdf"
+  },
+  {
+    "producto": "Kiplant VS-04",
+    "tipo": "ficha",
+    "nombre": "FT-Kiplant-VS-04.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Kiplant-VS-04.pdf"
   }
 ]
