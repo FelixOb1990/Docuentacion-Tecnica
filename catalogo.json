@@ -1444,5 +1444,11 @@
     "tipo": "ficha",
     "nombre": "FT-Kiplant-Essence.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Kiplant-Essence.pdf"
+  },
+  {
+    "producto": "Kiplant Allgrip",
+    "tipo": "ficha",
+    "nombre": "FT-Kiplant-Allgrip.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Kiplant-Allgrip.pdf"
   }
 ]
