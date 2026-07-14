@@ -1456,5 +1456,11 @@
     "tipo": "ficha",
     "nombre": "FT-Kiplant-VS-04.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Kiplant-VS-04.pdf"
+  },
+  {
+    "producto": "Arsenal 24 SL",
+    "tipo": "hoja",
+    "nombre": "MSDS-ARSENAL-24-SL.PDF",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-ARSENAL-24-SL.PDF"
   }
 ]
