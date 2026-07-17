@@ -1456,5 +1456,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-ARSENAL-24-SL.PDF",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-ARSENAL-24-SL.PDF"
+  },
+  {
+    "producto": "Heat 70 WG",
+    "tipo": "hoja",
+    "nombre": "MSDS-HEAT.PDF",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-HEAT.PDF"
   }
 ]
