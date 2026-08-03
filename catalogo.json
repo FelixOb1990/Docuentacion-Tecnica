@@ -1462,5 +1462,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-HEAT.PDF",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-HEAT.PDF"
+  },
+  {
+    "producto": "Lepicron 75 WP",
+    "tipo": "hoja",
+    "nombre": "MSDS-LEPICROM.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-LEPICROM.pdf"
   }
 ]
