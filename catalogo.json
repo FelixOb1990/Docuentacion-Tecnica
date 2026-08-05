@@ -1474,5 +1474,11 @@
     "tipo": "ficha",
     "nombre": "FT-Ingrain.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Ingrain.pdf"
+  },
+  {
+    "producto": "Ingrain 20 SG",
+    "tipo": "panfleto",
+    "nombre": "PANFLETO-INGRAIN-20-SG.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/PANFLETO-INGRAIN-20-SG.pdf"
   }
 ]
