@@ -1468,5 +1468,11 @@
     "tipo": "hoja",
     "nombre": "MSDS-LEPICROM.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-LEPICROM.pdf"
+  },
+  {
+    "producto": "Ingrain 20 SG",
+    "tipo": "ficha",
+    "nombre": "FT-Ingrain.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Ingrain.pdf"
   }
 ]
