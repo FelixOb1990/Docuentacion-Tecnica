@@ -1480,5 +1480,11 @@
     "tipo": "ficha",
     "nombre": "FT-Razor-50-SC.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/FT-Razor-50-SC.pdf"
+  },
+  {
+    "producto": "Basta 15 SL",
+    "tipo": "panfleto",
+    "nombre": "Panfleto-Basta.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Basta.pdf"
   }
 ]
