@@ -1486,5 +1486,11 @@
     "tipo": "panfleto",
     "nombre": "Panfleto-Basta.pdf",
     "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/Panfleto-Basta.pdf"
+  },
+  {
+    "producto": "Razor 50 SC",
+    "tipo": "hoja",
+    "nombre": "MSDS-RAZOR.pdf",
+    "url": "https://raw.githubusercontent.com/FelixOb1990/Docuentacion-Tecnica/main/uploads/MSDS-RAZOR.pdf"
   }
 ]
